@@ -1,0 +1,3 @@
+<div class="alert alert-info">
+    Ao importar um exercício será realizada uma "cópia" do exercício original para a sua turma. Dessa maneira, será adicionado um exercício com mesmo título, descrição, casos de teste e arquivos anexados que o exercício original. Após a cópia, não haverá nenhuma conexão entre o exercício original e o novo exercício. Assim, será possível modificar qualquer informação, adicionar ou excluir casos de teste e arquivos anexados. Modificações no exercício original ou no importado não causarão efeitos no outro respectivo exercício.
+</div>

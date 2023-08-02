@@ -1,0 +1,80 @@
+version: "3.7"
+
+services:
+  # PHP Application Itself
+  app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+    networks:
+      - runcodes-net
+    environment:
+      RUNCODES_S3_PUBLIC_ENDPOINT: 127.0.0.1
+
+  # PostgreSQL Database
+  database:
+    image: ghcr.io/runcodes-icmc/database:latest-development
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=secret_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - runcodes-db-vol:/var/lib/postgresql/data
+    networks:
+      - runcodes-net
+
+  # Caddy reverse proxy to communicate with PHP FastCGI
+  caddy:
+    image: caddy:alpine
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./config/caddy/Caddyfile:/etc/caddy/Caddyfile # Mount Configs
+      - ./src/app/webroot:/srv/public # Mount WebRoot
+    networks:
+      - runcodes-net
+
+  # Local SMTP server for intercepting e-mails
+  smtp4dev:
+    image: rnwood/smtp4dev
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    networks:
+      - runcodes-net
+
+  # Redis for cache & session management
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - runcodes-redis-vol:/data
+    networks:
+      - runcodes-net
+
+  ###########
+  # Seaweed #
+  ###########
+
+  seaweed:
+    image: chrislusf/seaweedfs
+    ports:
+      - 8333:8333
+    command: server -s3 -volume.max=50 -dir="/data" -master.volumeSizeLimitMB=256 -ip=seaweed -ip.bind=0.0.0.0
+    volumes:
+      - runcodes-seaweed-vol:/data
+    networks:
+      - runcodes-net
+
+networks:
+  runcodes-net:
+
+volumes:
+  runcodes-db-vol:
+  runcodes-redis-vol:
+  runcodes-seaweed-vol:

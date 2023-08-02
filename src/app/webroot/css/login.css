@@ -1,0 +1,199 @@
+/* 
+    Document   : login
+    Created on : 20-jul-2013, 21:48:01
+    Author     : Fábio
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+div.login{
+    /*min-height: 100%;*/
+}
+
+.boxes-page {
+    width: 100%;
+    height: 300%;
+}
+
+.single-box {
+    height: 33.333334%;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+@media (max-width: 1400px) { 
+    div.login{
+        background: url('../img/login_bg.jpg') top center no-repeat fixed;
+        background-size: cover;
+    }
+    
+}
+
+@media (min-width: 1401px) { 
+    div.login{
+        background: url('../img/login_bg.jpg') top center no-repeat fixed;
+        background-size: cover;
+        
+    }
+}
+
+@media (max-width: 1400px) { 
+    div.login.img2{
+        background: url('../img/login_bg2_low.jpg') top center no-repeat fixed;
+        background-size: cover;
+    }
+    
+}
+
+@media (min-width: 1401px) { 
+    div.login.img2{
+        background: url('../img/login_bg2.jpg') top center no-repeat fixed;
+        background-size: cover;
+        
+    }
+}
+
+@media (max-width: 1400px) { 
+    div.login.img3{
+        background: url('../img/login_bg3_low.jpg') top center no-repeat fixed;
+        background-size: cover;
+    }
+    
+}
+
+@media (min-width: 1401px) { 
+    div.login.img3{
+        background: url('../img/login_bg3.jpg') top center no-repeat fixed;
+        background-size: cover;
+        
+    }
+}
+@media (max-width: 1400px) { 
+    div.login.img4{
+        background: url('../img/login_bg4_low.jpg') top center no-repeat fixed;
+        background-size: cover;
+    }
+    
+}
+
+@media (min-width: 1401px) { 
+    div.login.img4{
+        background: url('../img/login_bg4.jpg') top center no-repeat fixed;
+        background-size: cover;
+        
+    }
+}
+div.login-box{
+    width: 800px;
+    margin: 100px auto;
+    background: white;
+    padding: 25px;
+}
+
+div.sign-up-block{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 10px;
+}
+
+.modal-form {
+    margin: none;
+}
+
+.content-about {
+    background: #31a5d9;
+    color: white;
+}
+.content-about h1,.contact-box h1 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.content-about p {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.contact-box, .content-contact {
+    background: #ffc20e;
+}
+.home-contact-form .contact-input, .home-contact-form .contact-textarea {
+    border: 1px solid #bd8e04;
+    border-radius: 0px;
+-webkit-box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.35);
+box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.35);
+}
+.home-contact-form .contact-input {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+.home-contact-form .contact-textarea {
+    height: 170px;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.home-contact-form .contact-submit {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    background: #bd8e04;
+    color: white;
+    border: 1px solid #644d07;
+    -webkit-box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.35);
+    box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.35);
+}
+
+.home-contact-form .contact-submit:hover {
+    /*background: #fee69f;*/
+    /*color: black;*/
+    -webkit-box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.55);
+    box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.55);
+}
+
+.faq-content {
+    background: #666;
+    color: white;
+}
+.content-faq h1,.contact-faq h1 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.content-faq p {
+    padding-bottom: 5px;
+}
+
+.content-faq ul {
+    margin: 0;
+    padding: 0;
+}
+
+.content-faq ul li {
+    list-style: none;
+}
+
+.content-faq a {
+    padding: 5px;
+    padding-bottom: 5px;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.content-faq a:hover {
+    background: #999;
+}

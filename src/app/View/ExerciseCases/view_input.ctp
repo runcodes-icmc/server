@@ -1,0 +1,2 @@
+<?php
+echo $this->Form->input('input',array('label' => array('text' => __('Exercise Case Input')),'type' => 'textarea', 'id' => 'copyable-field', 'disabled' => 'disabled','style' => 'width: 520px', 'value' => $exerciseCase['ExerciseCase']['input']));

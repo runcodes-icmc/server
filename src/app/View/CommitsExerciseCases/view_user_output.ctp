@@ -1,0 +1,2 @@
+<?php 
+echo $this->Form->input('user_output',array('label' => array('text' => __('User Output')),'type' => 'textarea', 'id' => 'copyable-field', 'disabled' => 'disabled','style' => 'width: 520px', 'value' => $commitsExerciseCase['CommitsExerciseCase']['output']));

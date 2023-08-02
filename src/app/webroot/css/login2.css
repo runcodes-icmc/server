@@ -1,0 +1,211 @@
+body {
+    background: url("../img/login2back.jpg") center center fixed no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    border-radius: 0px;
+    border-width: 1px;
+    font-weight: 200;
+}
+
+.welcome-area {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60%;
+    height: auto;
+    min-height: 100%;
+}
+
+.welcome-area-content {
+    font-weight: 700;
+}
+
+.login-area {
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    width: 40%;
+    height: auto;
+    min-height: 100%;
+    background-color: rgba(53,68,88,0.8);
+}
+
+.login-box {
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .welcome-area-content {
+        width: 70%;
+        margin-left: 27%;
+    }
+    .login-box {
+        width: 60%;
+    }
+    .login-box .btn {
+        font-size: 130%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .welcome-area-content {
+        width: 85%;
+        margin-left: 13%;
+    }
+    .login-box {
+        width: 80%;
+    }
+    .login-box .btn {
+        font-size: 110%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .welcome-area-content {
+        width: 96%;
+        margin-left: 2%;
+    }
+    .login-box {
+        width: 98%;
+    }
+    .login-box .btn {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-area, .login-area {
+        float: left;
+        width: 100%;
+        position: inherit;
+    }
+    .welcome-area-content {
+        width: 96%;
+        margin-left: 2%;
+    }
+    .login-box {
+        width: 96%;
+        margin-left: 2%;
+    }
+    .login-box .btn {
+        font-size: 100%;
+    }
+}
+
+@media (min-height: 700px) {
+    .welcome-area-content {
+        margin-top: 25%;
+        height: 60%;
+    }
+    .login-box {
+        margin-top: 30%;
+        height: 70%;
+    }
+}
+
+@media (max-height: 699px) {
+    .welcome-area-content {
+        margin-top: 10%;
+        height: 80%;
+    }
+    .login-box {
+        margin-top: 10%;
+        height: 80%;
+    }
+}
+
+@media (max-height: 450px) {
+    body {
+        overflow: auto;
+    }
+}
+
+.login-box a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #e9e0d6;
+}
+
+.login-box a:hover,.login-box a:active,.login-box a:focus {
+    color: white;
+}
+
+.btn-white-outline,.btn-white-outline:active,.btn-white-outline:focus {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+
+.btn-white-outline:hover {
+    color: #1a1a1a !important;
+    background-color: #e9e0d6;
+    border-color: #e9e0d6;
+}
+
+.btn-black-outline {
+    color: #1a1a1a;
+    background-color: transparent;
+    border-color: #1a1a1a;
+}
+
+.btn-black-outline:hover {
+    color: #e9e0d6;
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+}
+
+.btn-red-outline {
+    color: #E45F56;
+    background-color: transparent;
+    border: #E45F56 2px solid;
+    font-weight: 600;
+}
+
+.btn-red-outline:hover {
+    color: #e9e0d6;
+    background-color: #E45F56;
+    border-color: #E45F56;
+}
+
+.btn-linkedin {
+    background-color: #1E88BD;
+    color: white;
+}
+
+.btn-linkedin:hover {
+    background-color: #0274B4;
+    color: white;
+}
+
+.login-box .form-control {
+    border-radius: 0px;
+    border-width: 1px;
+}
+
+.login-box .btn, .welcome-area-content .btn {
+    text-transform: uppercase;
+}
+
+.sign-up-block {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: #e9e0d6 1px solid;
+}
+
+#modalRecoverPassword .modal-dialog {
+    margin: 150px auto;
+}
+
+.page-error {
+    text-align: right;
+}
+
+.error-code {
+    font-size: 60px;
+    margin: 0;
+}

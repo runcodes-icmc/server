@@ -1,0 +1,2974 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2014-04-09 09:48-0300\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/AlertsController.php:42;80;108
+msgid "Invalid alert"
+msgstr "Aviso inválido"
+
+#: Controller/AlertsController.php:61;87
+msgid "The alert could not be saved. Please, try again."
+msgstr "O aviso não pode ser salvo. Por favor, tente novamente."
+
+#: Controller/AlertsController.php:65
+#: Controller/PagesController.php:107
+#: View/Courses/index.ctp:31;50
+#: View/Users/index.ctp:28
+msgid "All"
+msgstr "Todos"
+
+#: Controller/AlertsController.php:84
+msgid "The alert has been saved"
+msgstr "O aviso foi salvo"
+
+#: Controller/AlertsController.php:112
+msgid "Alert deleted"
+msgstr "O aviso foi deletado"
+
+#: Controller/AlertsController.php:115
+msgid "Alert was not deleted"
+msgstr "O aviso não foi deletado"
+
+#: Controller/AllowedFilesController.php:43;75;100
+msgid "Invalid allowed file"
+msgstr "Tipo de arquivo permitido inválido"
+
+#: Controller/AllowedFilesController.php:58;79
+msgid "The allowed file has been saved"
+msgstr "O tipo de arquivo permitido foi salvo"
+
+#: Controller/AllowedFilesController.php:61;82
+msgid "The allowed file could not be saved. Please, try again."
+msgstr "O tipo de arquivo permitido não pode ser salvo. Por favor, tente novamente."
+
+#: Controller/AllowedFilesController.php:104
+msgid "Allowed file deleted"
+msgstr "O tipo de arquivo permitido foi deletado"
+
+#: Controller/AllowedFilesController.php:107
+msgid "Allowed file was not deleted"
+msgstr "O tipo de arquivo permitido não foi deletado"
+
+#: Controller/AppController.php:57
+msgid "Students"
+msgstr "Alunos"
+
+#: Controller/AppController.php:57
+msgid "Assistants"
+msgstr "Monitores"
+
+#: Controller/AppController.php:57
+msgid "Professor"
+msgstr "Professor"
+
+#: Controller/CommitsController.php:35;73;92;103
+msgid "Invalid commit"
+msgstr "Envio Inválido"
+
+#: Controller/CommitsController.php:67
+#: View/Commits/details.ctp:49
+msgid "This commit does not have any file on directory. Please verify the system integrity"
+msgstr "O envio não possui nenhum arquivo ou diretório. Por favor verifique a integridade do sistema."
+
+#: Controller/CommitsController.php:96
+msgid "The exercise will be recompiled soon"
+msgstr "O exercício será recompilado em instantes"
+
+#: Controller/CoursesController.php:65
+msgid "We already have a course with this code"
+msgstr "Já existe uma disciplina com este código"
+
+#: Controller/CoursesController.php:69;127
+msgid "The course has been saved"
+msgstr "A disciplina foi salva"
+
+#: Controller/CoursesController.php:72;130
+msgid "The course could not be saved. Please, try again."
+msgstr "A disciplina não pode ser salva. Por favor, tente novamente."
+
+#: Controller/CoursesController.php:99;123;148
+msgid "Invalid course"
+msgstr "Disciplina Inválida"
+
+#: Controller/CoursesController.php:152
+msgid "The course was deleted with success"
+msgstr "A disciplina foi deletada com sucesso"
+
+#: Controller/CoursesController.php:155
+msgid "Course was not deleted"
+msgstr "A disciplina não foi deletada"
+
+#: Controller/EnrollmentsController.php:65;99;127
+msgid "Invalid enrollment"
+msgstr "Matrícula inválida"
+
+#: Controller/EnrollmentsController.php:82;103
+msgid "The enrollment has been saved"
+msgstr "A matrícula foi salva"
+
+#: Controller/EnrollmentsController.php:85;106
+msgid "The enrollment could not be saved. Please, try again."
+msgstr "A matrícula não pode ser salva. Por favor, tente novamente."
+
+#: Controller/EnrollmentsController.php:131
+msgid "Enrollment deleted"
+msgstr "A matrícula foi deletada"
+
+#: Controller/EnrollmentsController.php:134
+msgid "Enrollment was not deleted"
+msgstr "A matrícula não foi deletada"
+
+#: Controller/ExerciseCasesController.php:42;88;116
+msgid "Invalid exercise case"
+msgstr "Caso de Teste Inválido"
+
+#: Controller/ExerciseCasesController.php:56
+msgid "The selected exercise does not exists"
+msgstr "O exercício selecionado não existe"
+
+#: Controller/ExerciseCasesController.php:63;92
+msgid "The exercise case has been saved"
+msgstr "O Caso de Teste foi salvo"
+
+#: Controller/ExerciseCasesController.php:66;95
+msgid "The exercise case could not be saved. Please, try again."
+msgstr "O Caso de Teste não pode ser salvo. Por favor, tente novamente."
+
+#: Controller/ExerciseCasesController.php:69
+msgid "1sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:69
+msgid "2sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:69
+msgid "3sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:69
+msgid "4sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:69
+msgid "5sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:69
+msgid "10sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:70
+msgid "15sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:70
+msgid "20sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:70
+msgid "30sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:70
+msgid "40sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:70
+msgid "50sec"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:70
+msgid "1min"
+msgstr ""
+
+#: Controller/ExerciseCasesController.php:120
+msgid "Exercise case deleted"
+msgstr "O Caso de Teste foi deletado"
+
+#: Controller/ExerciseCasesController.php:123
+msgid "Exercise case was not deleted"
+msgstr "O Caso de Teste não foi deletado"
+
+#: Controller/ExerciseFilesController.php:37
+msgid "Invalid exercise file"
+msgstr "Arquivo de exercício inválido"
+
+#: Controller/ExercisesController.php:72;95;113;225;260
+msgid "Invalid exercise"
+msgstr "Exercício inválido"
+
+#: Controller/ExercisesController.php:136;137
+msgid "The selected exercise is closed to new commits"
+msgstr "O exercício selecionado não aceita novas entregas"
+
+#: Controller/ExercisesController.php:177
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr "O arquivo enviado excede o tamanho máximo"
+
+#: Controller/ExercisesController.php:178
+msgid "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form"
+msgstr "O arquivo enviado excede o tamanho máximo"
+
+#: Controller/ExercisesController.php:179
+msgid "The uploaded file was only partially uploaded"
+msgstr "O arquivo foi enviado parcialmente "
+
+#: Controller/ExercisesController.php:180
+msgid "No file was uploaded"
+msgstr "Nenhum arquivo foi enviado"
+
+#: Controller/ExercisesController.php:181
+msgid "Missing a temporary folder"
+msgstr "Faltando uma pasta temporária"
+
+#: Controller/ExercisesController.php:182
+msgid "Failed to write file to disk"
+msgstr "Falha ao escrever arquivo no disco"
+
+#: Controller/ExercisesController.php:183
+msgid "A PHP extension stopped the file upload"
+msgstr "A extensão PHP parou o envio do arquivo"
+
+#: Controller/ExercisesController.php:184
+msgid "The uploaded file has a filetype not allowed on this exercise"
+msgstr "O tipo do arquivo enviado não é permitido neste exercício"
+
+#: Controller/ExercisesController.php:196
+msgid "The selected course offering does not exists"
+msgstr "O oferecimento de disciplina selecionado não existe"
+
+#: Controller/ExercisesController.php:204;231
+msgid "The exercise has been saved"
+msgstr "O exercício foi salvo"
+
+#: Controller/ExercisesController.php:207;234
+msgid "The exercise could not be saved. Please, try again."
+msgstr "O exercício não foi salvo. Por favor, tente novamente."
+
+#: Controller/ExercisesController.php:264
+msgid "Exercise deleted"
+msgstr "O exercício foi deletado"
+
+#: Controller/ExercisesController.php:267
+msgid "Exercise was not deleted"
+msgstr "O exercício não foi deletado"
+
+#: Controller/OfferingsController.php:55;135;139;181;208
+msgid "Invalid offering"
+msgstr "Oferecimento inválido"
+
+#: Controller/OfferingsController.php:152;185
+msgid "The offering has been saved"
+msgstr "Turma salva com sucesso"
+
+#: Controller/OfferingsController.php:164;188
+msgid "The offering could not be saved. Please, try again."
+msgstr "Erro ao salvar turma. Por favor, tente novamente."
+
+#: Controller/OfferingsController.php:212
+msgid "Offering deleted"
+msgstr "O oferecimento foi deletado"
+
+#: Controller/OfferingsController.php:215
+msgid "Offering was not deleted"
+msgstr "O oferecimento não foi deletado"
+
+#: Controller/TicketsController.php:51;59;69;110;137
+msgid "Invalid ticket"
+msgstr "Chamado inválido"
+
+#: Controller/TicketsController.php:92;114
+msgid "The ticket has been saved"
+msgstr "O chamado foi salvo"
+
+#: Controller/TicketsController.php:95;117
+msgid "The ticket could not be saved. Please, try again."
+msgstr "O chamado não foi salvo. Por favor, tente novamente."
+
+#: Controller/TicketsController.php:141
+msgid "Ticket deleted"
+msgstr "O chamado foi deletado"
+
+#: Controller/TicketsController.php:144
+msgid "Ticket was not deleted"
+msgstr "O chamado não foi deletado"
+
+#: Controller/UsersController.php:24
+#: View/Layouts/default.ctp:75
+#: View/Users/edit.ctp:5
+#: View/Users/index.ctp:5
+msgid "Users"
+msgstr "Usuários"
+
+#: Controller/UsersController.php:49
+msgid "Incorrect email and/or password or You have not confirmed your registration by email"
+msgstr "Email e/ou senha incorretos ou o cadastro ainda não foi confirmado por email"
+
+#: Controller/UsersController.php:62
+msgid "Invalid URL"
+msgstr "URL inválida"
+
+#: Controller/UsersController.php:70
+msgid "Este usuário não está cadastrado no sistema"
+msgstr ""
+
+#: Controller/UsersController.php:74
+msgid "Seu cadastro já foi confirmado, você pode entrar no sistema"
+msgstr ""
+
+#: Controller/UsersController.php:81;125;173;199
+msgid "Invalid user"
+msgstr "Usuário inválido"
+
+#: Controller/UsersController.php:86
+msgid "Seu cadastro foi confirmado, você já pode entrar no sistema"
+msgstr ""
+
+#: Controller/UsersController.php:89
+msgid "Ocorreu um erro e o cadastro não foi confirmado"
+msgstr ""
+
+#: Controller/UsersController.php:94
+msgid "Invalid check code"
+msgstr "Código de verificação inválido"
+
+#: Controller/UsersController.php:140
+msgid "We already have an user with this email"
+msgstr "Já existe um usuário cadastrado com esse email"
+
+#: Controller/UsersController.php:146
+msgid "Seu cadastro foi realizado, você receberá um email para confirmá-lo"
+msgstr ""
+
+#: Controller/UsersController.php:158;180
+msgid "The user could not be saved. Please, try again."
+msgstr "O usuário não foi salvo. Por favor, tente novamente."
+
+#: Controller/UsersController.php:177
+msgid "The user has been saved"
+msgstr "O usuário foi salvo"
+
+#: Controller/UsersController.php:203
+msgid "User deleted"
+msgstr "O Usuário foi deletado"
+
+#: Controller/UsersController.php:206
+msgid "User was not deleted"
+msgstr "O Usuário não foi deletado"
+
+#: Controller/Component/OpenidComponent.php:300
+msgid "OpenID Authentication Redirect"
+msgstr "Redirecionamento de Autenticação OpenID"
+
+#: Model/Commit.php:115
+msgid "In Queue"
+msgstr "Em Fila"
+
+#: Model/Commit.php:115
+msgid "Compiling"
+msgstr "Em Compilação"
+
+#: Model/Commit.php:115
+msgid "Compiled"
+msgstr "Compilado"
+
+msgid "compiled"
+msgstr "compilado"
+
+msgid "correct cases"
+msgstr "casos corretos"
+
+msgid "score"
+msgstr "pontuação"
+
+#: Model/Commit.php:115
+msgid "Running"
+msgstr "Rodando"
+
+#: Model/Commit.php:115
+#: View/Exercises/index.ctp:56
+msgid "Uncompleted"
+msgstr "Incompleto"
+
+#: Model/Commit.php:115
+msgid "Completed"
+msgstr "Finalizado"
+
+#: Model/Commit.php:115
+#: View/Exercises/view.ctp:182
+msgid "Error"
+msgstr "Erro"
+
+#: Model/Commit.php:115
+msgid "Waiting..."
+msgstr "Em espera..."
+
+#: Model/Exercise.php:202
+msgid "Not Delivered"
+msgstr "Não Entregue"
+
+#: Model/Ticket.php:104
+msgid "Bug"
+msgstr "Erro"
+
+#: Model/Ticket.php:104
+msgid "Issue"
+msgstr "Pergunta"
+
+#: Model/Ticket.php:104
+msgid "Suggestion"
+msgstr "Sugestão"
+
+#: Model/Ticket.php:104
+msgid "Request"
+msgstr "Requisição"
+
+#: Model/Ticket.php:118
+#: View/Exercises/view.ctp:31
+#: View/Offerings/view.ctp:64
+msgid "Open"
+msgstr "Aberto"
+
+#: Model/Ticket.php:118
+#: View/Enrollments/index.ctp:58
+#: View/Exercises/index.ctp:84
+#: View/Exercises/view.ctp:33
+#: View/Offerings/view.ctp:66
+msgid "Closed"
+msgstr "Fechado"
+
+#: Model/Ticket.php:126
+msgid "Very High"
+msgstr "Muito alta"
+
+#: Model/Ticket.php:126
+msgid "High"
+msgstr "Alta"
+
+#: Model/Ticket.php:126
+msgid "Normal"
+msgstr ""
+
+#: Model/Ticket.php:126
+msgid "Low"
+msgstr "Baixa"
+
+#: Model/Ticket.php:126
+msgid "Very Low"
+msgstr "Muito Baixa"
+
+#: Model/User.php:144
+msgid "Aluno"
+msgstr ""
+
+#: View/Alerts/add.ctp:5
+#: View/Alerts/index.ctp:5
+#: View/Layouts/default.ctp:78
+#: View/Pages/home_student.ctp:6;139
+msgid "Alerts"
+msgstr "Avisos"
+
+#: View/Alerts/add.ctp:10
+msgid "Add Alert"
+msgstr "Adicionar Aviso"
+
+#: View/Alerts/add.ctp:15
+#: View/Alerts/view.ctp:34
+#: View/Courses/view.ctp:14
+#: View/Exercises/add.ctp:50
+#: View/Exercises/edit.ctp:51
+#: View/Pages/home_student.ctp:151
+msgid "Title"
+msgstr "Título"
+
+#: View/Alerts/add.ctp:16
+#: View/Alerts/view.ctp:39
+#: View/Exercises/view.ctp:121
+#: View/Pages/home_student.ctp:152;169
+#: View/Tickets/view.ctp:39
+msgid "Message"
+msgstr "Mensagem"
+
+#: View/Alerts/add.ctp:17
+#: View/Offerings/add.ctp:16
+#: View/Pages/home_student.ctp:153
+msgid "Valid until"
+msgstr "Disponível até"
+
+#: View/Alerts/add.ctp:20
+#: View/Alerts/edit.ctp:16
+#: View/AllowedFiles/add.ctp:20
+#: View/AllowedFiles/edit.ctp:21
+#: View/Courses/add.ctp:10
+#: View/Courses/edit.ctp:11
+#: View/Courses/index.ctp:115;130
+#: View/ExerciseCases/add.ctp:68;70
+#: View/ExerciseCases/edit.ctp:20
+#: View/Exercises/add.ctp:88;90
+#: View/Exercises/edit.ctp:89;91;120
+#: View/Offerings/add.ctp:20
+#: View/Offerings/edit.ctp:13
+#: View/Pages/home_student.ctp:155
+#: View/Tickets/add.ctp:15
+#: View/Tickets/edit.ctp:16
+#: View/Users/edit.ctp:17
+msgid "Submit"
+msgstr "Enviar"
+
+#: View/Alerts/edit.ctp:4
+#: View/Alerts/view.ctp:49
+msgid "Edit Alert"
+msgstr "Editar Aviso"
+
+#: View/Alerts/edit.ctp:19
+#: View/Alerts/index.ctp:37
+#: View/Alerts/view.ctp:47
+#: View/AllowedFiles/index.ctp:34
+#: View/AllowedFiles/view.ctp:37
+#: View/Courses/add.ctp:13
+#: View/Courses/edit.ctp:14
+#: View/Courses/index.ctp:67
+#: View/Courses/view.ctp:22
+#: View/Enrollments/index.ctp:21;50
+#: View/Enrollments/view.ctp:27
+#: View/ExerciseCases/edit.ctp:23
+#: View/ExerciseCases/index.ctp:16;56
+#: View/ExerciseCases/view.ctp:62;84;120
+#: View/Exercises/edit.ctp:123
+#: View/Exercises/index.ctp:26;76
+#: View/Exercises/view.ctp:156
+#: View/Exercises/view_professor.ctp:62;131;163
+#: View/Offerings/edit.ctp:16
+#: View/Offerings/index.ctp:110
+#: View/Offerings/view.ctp:52;101;142
+#: View/Pages/home_student.ctp:53;99
+#: View/Tickets/add.ctp:18
+#: View/Tickets/edit.ctp:19
+#: View/Tickets/index.ctp:18
+#: View/Tickets/view.ctp:47
+#: View/Users/index.ctp:49
+#: View/Users/view.ctp:37
+msgid "Actions"
+msgstr "Ações"
+
+#: View/Alerts/edit.ctp:22
+#: View/Alerts/index.ctp:57
+#: View/AllowedFiles/index.ctp:52
+#: View/Courses/edit.ctp:17
+#: View/Courses/index.ctp:78
+#: View/ExerciseCases/edit.ctp:26
+#: View/ExerciseCases/index.ctp:36
+#: View/ExerciseCases/view.ctp:96;135
+#: View/Exercises/edit.ctp:126
+#: View/Offerings/edit.ctp:19
+#: View/Offerings/index.ctp:41;76;125
+#: View/Tickets/edit.ctp:22
+#: View/Users/index.ctp:68
+msgid "Delete"
+msgstr "Deletar"
+
+#: View/Alerts/edit.ctp:22
+#: View/Alerts/index.ctp:57
+#: View/Alerts/view.ctp:50
+#: View/AllowedFiles/index.ctp:52
+#: View/AllowedFiles/view.ctp:40
+#: View/Courses/edit.ctp:17
+#: View/Courses/index.ctp:78
+#: View/Courses/view.ctp:25
+#: View/Enrollments/view.ctp:30
+#: View/ExerciseCases/edit.ctp:26
+#: View/ExerciseCases/index.ctp:36
+#: View/ExerciseCases/view.ctp:65;96;135
+#: View/Exercises/edit.ctp:126
+#: View/Offerings/edit.ctp:19
+#: View/Offerings/index.ctp:41;76;125
+#: View/Tickets/edit.ctp:22
+#: View/Tickets/view.ctp:50
+#: View/Users/index.ctp:68
+#: View/Users/view.ctp:40
+msgid "Are you sure you want to delete # %s?"
+msgstr "Tem certeza que deseja deletar # %s?"
+
+#: View/Alerts/edit.ctp:23
+#: View/Alerts/view.ctp:51
+msgid "List Alerts"
+msgstr "Listar Avisos"
+
+#: View/Alerts/edit.ctp:24
+#: View/Alerts/view.ctp:53
+#: View/Enrollments/view.ctp:33
+#: View/Exercises/edit.ctp:128
+#: View/Offerings/edit.ctp:20
+msgid "List Offerings"
+msgstr "Listar Oferecimentos"
+
+#: View/Alerts/edit.ctp:25
+#: View/Alerts/view.ctp:54
+#: View/Enrollments/view.ctp:34
+#: View/Exercises/edit.ctp:129
+msgid "New Offering"
+msgstr "Nova Turma"
+
+#: View/Alerts/edit.ctp:26
+#: View/Alerts/view.ctp:55
+#: View/Enrollments/view.ctp:35
+#: View/Tickets/add.ctp:22
+#: View/Tickets/edit.ctp:24
+#: View/Tickets/view.ctp:53
+#: View/Users/view.ctp:41
+msgid "List Users"
+msgstr "Listar Usuários"
+
+#: View/Alerts/edit.ctp:27
+#: View/Alerts/view.ctp:56
+#: View/Enrollments/view.ctp:36
+#: View/Tickets/add.ctp:23
+#: View/Tickets/edit.ctp:25
+#: View/Tickets/view.ctp:54
+#: View/Users/view.ctp:42
+msgid "New User"
+msgstr "Novo Usuário"
+
+#: View/Alerts/index.ctp:7
+#: View/AllowedFiles/index.ctp:7
+#: View/Courses/index.ctp:7
+#: View/Offerings/index.ctp:7
+msgid "+ Add"
+msgstr "+ Adicionar"
+
+#: View/Alerts/index.ctp:55
+#: View/ExerciseCases/index.ctp:34
+#: View/ExerciseCases/view.ctp:94;133
+#: View/Users/index.ctp:66
+msgid "View"
+msgstr "Visualizar"
+
+#: View/Alerts/index.ctp:56
+#: View/AllowedFiles/index.ctp:51
+#: View/Courses/index.ctp:77
+#: View/ExerciseCases/index.ctp:35
+#: View/ExerciseCases/view.ctp:95;134
+#: View/Offerings/index.ctp:40;75;124
+#: View/Users/index.ctp:67
+msgid "Edit"
+msgstr "Editar"
+
+#: View/Alerts/index.ctp:66
+#: View/AllowedFiles/index.ctp:61
+#: View/Courses/index.ctp:87
+#: View/ExerciseCases/index.ctp:44
+#: View/Offerings/index.ctp:134
+#: View/Tickets/index.ctp:64
+#: View/Users/index.ctp:77
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr "Página {:page} de {:pages}, mostrando {:current} registros do total de {:count}, começando no {:start} e terminando no {:end}"
+
+#: View/Alerts/view.ctp:2
+msgid "Alert"
+msgstr "Aviso"
+
+#: View/Alerts/view.ctp:4
+#: View/AllowedFiles/view.ctp:4
+#: View/Courses/view.ctp:4
+#: View/Enrollments/view.ctp:4
+#: View/ExerciseCases/view.ctp:4;81;114
+#: View/Exercises/view.ctp:151
+#: View/Exercises/view_professor.ctp:125;157
+#: View/Offerings/index.ctp:21;56
+#: View/Offerings/view.ctp:97
+#: View/Tickets/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: View/Alerts/view.ctp:9
+#: View/Tickets/view.ctp:19
+#: View/Users/view.ctp:19
+msgid "Type"
+msgstr "Tipo"
+
+#: View/Alerts/view.ctp:14
+#: View/Enrollments/index.ctp:91
+#: View/Enrollments/view.ctp:9
+msgid "Offering"
+msgstr "Oferecimento"
+
+#: View/Alerts/view.ctp:19
+msgid "Recipients"
+msgstr "Destinatários"
+
+#: View/Alerts/view.ctp:24
+#: View/Enrollments/view.ctp:14
+#: View/Tickets/view.ctp:9
+#: View/Users/view.ctp:2
+msgid "User"
+msgstr "Usuário"
+
+#: View/Alerts/view.ctp:29
+msgid "Valid"
+msgstr "Válido até"
+
+#: View/Alerts/view.ctp:50
+msgid "Delete Alert"
+msgstr "Apagar Aviso"
+
+#: View/Alerts/view.ctp:52
+msgid "New Alert"
+msgstr "Novo Aviso"
+
+#: View/AllowedFiles/add.ctp:5
+#: View/AllowedFiles/edit.ctp:5
+#: View/AllowedFiles/index.ctp:5
+#: View/Layouts/default.ctp:79
+msgid "Allowed Files"
+msgstr "Tipos de Arquivos"
+
+#: View/AllowedFiles/add.ctp:10
+#: View/AllowedFiles/view.ctp:39
+msgid "Edit Allowed File"
+msgstr "Editar Tipo de Arquivo Permitido"
+
+#: View/AllowedFiles/add.ctp:12
+#: View/AllowedFiles/edit.ctp:13
+#: View/AllowedFiles/view.ctp:9
+#: View/Exercises/view_professor.ctp:126;158
+#: View/Offerings/view.ctp:98;138
+#: View/Users/add.ctp:20
+#: View/Users/view.ctp:9
+msgid "Name"
+msgstr "Nome Completo"
+
+#: View/AllowedFiles/add.ctp:13
+#: View/AllowedFiles/edit.ctp:14
+#: View/AllowedFiles/view.ctp:14
+msgid "Extension"
+msgstr "Extensão"
+
+#: View/AllowedFiles/add.ctp:14
+#: View/AllowedFiles/edit.ctp:15
+#: View/AllowedFiles/view.ctp:19
+msgid "Compilable"
+msgstr "Compilável"
+
+#: View/AllowedFiles/add.ctp:14
+#: View/AllowedFiles/edit.ctp:15
+#: View/AllowedFiles/index.ctp:47
+#: View/Commits/details.ctp:16
+#: View/Exercises/view.ctp:105
+#: View/Exercises/view_professor.ctp:77;84;91
+#: View/Tickets/index.ctp:41
+#: View/Users/index.ctp:63
+msgid "No"
+msgstr "Não"
+
+#: View/AllowedFiles/add.ctp:14
+#: View/AllowedFiles/edit.ctp:15
+#: View/AllowedFiles/index.ctp:45
+#: View/Commits/details.ctp:16
+#: View/Exercises/view.ctp:105
+#: View/Exercises/view_professor.ctp:75;82;89
+#: View/Tickets/index.ctp:39
+#: View/Users/index.ctp:61
+msgid "Yes"
+msgstr "Sim"
+
+#: View/AllowedFiles/add.ctp:15
+#: View/AllowedFiles/edit.ctp:16
+#: View/AllowedFiles/view.ctp:24
+msgid "Compile Command"
+msgstr "Comando de Compilação"
+
+#: View/AllowedFiles/add.ctp:16
+#: View/AllowedFiles/edit.ctp:17
+#: View/AllowedFiles/view.ctp:29
+msgid "Run Command"
+msgstr "Comando de Execução"
+
+#: View/AllowedFiles/edit.ctp:10
+msgid "Add Allowed File"
+msgstr "Adicionar Tipo de Arquivo Permitido"
+
+#: View/AllowedFiles/view.ctp:2
+msgid "Allowed File"
+msgstr "Tipo de Arquivo Permitido"
+
+#: View/AllowedFiles/view.ctp:40
+msgid "Delete Allowed File"
+msgstr "Deletar Tipo de Arquivo Permitido"
+
+#: View/AllowedFiles/view.ctp:41
+msgid "List Allowed Files"
+msgstr "Listar Tipos de Arquivos Permitidos"
+
+#: View/AllowedFiles/view.ctp:42
+msgid "New Allowed File"
+msgstr "Novo Tipo de Arquivo Permitido"
+
+#: View/Commits/details.ctp:9
+#: View/Commits/edit_score.ctp:8
+msgid "Submitted by: %s (%s)"
+msgstr "Submetido por: %s (%s)"
+
+#: View/Commits/details.ctp:10
+#: View/Commits/edit_score.ctp:9
+msgid "Date: %s"
+msgstr "Data: %s"
+
+#: View/Commits/details.ctp:31
+msgid "Cases Result: "
+msgstr "Resultado dos Casos: "
+
+#: View/Commits/details.ctp:43
+msgid "Files: "
+msgstr "Arquivos: "
+
+#: View/Commits/details.ctp:47
+msgid "Download File"
+msgstr "Baixar Arquivo"
+
+#: View/Commits/details.ctp:59
+msgid "Stats: "
+msgstr "Estatísticas: "
+
+msgid "Stats"
+msgstr "Estatísticas"
+
+#: View/Commits/edit_score.ctp:4
+#: View/Exercises/view_professor.ctp:145;177
+msgid "Edit Score"
+msgstr "Editar Nota"
+
+#: View/Commits/edit_score.ctp:10
+msgid "Correct Cases: %s"
+msgstr "Casos Corretos: %s"
+
+#: View/Commits/edit_score.ctp:12
+msgid "New Score"
+msgstr "Nova Nota"
+
+#: View/Commits/edit_score.ctp:16
+msgid "Confirm Change"
+msgstr "Confirmar Mudança"
+
+#: View/Courses/add.ctp:4
+#: View/Courses/index.ctp:105
+msgid "Add Course"
+msgstr "Adicionar Disciplina"
+
+#: View/Courses/add.ctp:16
+#: View/Courses/edit.ctp:18
+#: View/Courses/view.ctp:26
+#: View/Offerings/edit.ctp:21
+msgid "List Courses"
+msgstr "Listas Disciplinas"
+
+#: View/Courses/edit.ctp:4
+#: View/Courses/view.ctp:24
+msgid "Edit Course"
+msgstr "Editar Disciplina"
+
+#: View/Courses/index.ctp:5
+#: View/Layouts/default.ctp:76
+msgid "Courses"
+msgstr "Disciplinas"
+
+#: View/Courses/index.ctp:120
+msgid "Load Courses List"
+msgstr "Carregar Lista de Disciplinas"
+
+#: View/Courses/view.ctp:2
+#: View/Offerings/index.ctp:22;57
+msgid "Course"
+msgstr "Disciplina"
+
+#: View/Courses/view.ctp:9
+msgid "Code"
+msgstr "Código"
+
+#: View/Courses/view.ctp:25
+msgid "Delete Course"
+msgstr "Apagar Disciplina"
+
+#: View/Courses/view.ctp:27
+#: View/Offerings/edit.ctp:22
+msgid "New Course"
+msgstr "Nova Disciplina"
+
+#: View/Enrollments/index.ctp:5
+msgid "My Enrollments"
+msgstr "Meus Oferecimentos"
+
+#: View/Enrollments/index.ctp:18;47
+#: View/Exercises/index.ctp:19;73
+#: View/Pages/home_student.ctp:46;97
+msgid "Subject Code"
+msgstr "Código"
+
+#: View/Enrollments/index.ctp:19;48
+#: View/Exercises/index.ctp:20;74
+#: View/Exercises/view.ctp:25
+#: View/Exercises/view_professor.ctp:29
+#: View/Pages/home_student.ctp:47;98
+msgid "Subject"
+msgstr "Disciplina"
+
+#: View/Enrollments/index.ctp:20;49
+#: View/ExerciseCases/view.ctp:118
+#: View/Exercises/index.ctp:22;75
+#: View/Exercises/view.ctp:118;153
+#: View/Exercises/view_professor.ctp:128;160
+#: View/Offerings/view.ctp:48
+#: View/Pages/home_student.ctp:49
+#: View/Tickets/view.ctp:24
+msgid "Status"
+msgstr ""
+
+#: View/Enrollments/index.ctp:29
+#: View/Exercises/index.ctp:34
+msgid "Active"
+msgstr "Ativo"
+
+#: View/Enrollments/index.ctp:31
+#: View/ExerciseCases/edit.ctp:29
+#: View/ExerciseCases/index.ctp:60
+#: View/ExerciseCases/view.ctp:69
+#: View/Exercises/add.ctp:47
+#: View/Exercises/edit.ctp:47
+#: View/Exercises/index.ctp:36
+msgid "New Exercise"
+msgstr "Novo Exercício"
+
+#: View/Enrollments/index.ctp:32
+#: View/Pages/home_student.ctp:107
+msgid "View Subject Page"
+msgstr "Ver Página da Disciplina"
+
+#: View/Enrollments/index.ctp:39
+#: View/Offerings/index.ctp:48
+msgid "You do not have any active subject"
+msgstr "Você não possui disciplinas ativas"
+
+#: View/Enrollments/index.ctp:60
+#: View/Exercises/index.ctp:37;86
+msgid "View Exercises"
+msgstr "Ver Exercícios"
+
+#: View/Enrollments/index.ctp:61
+#: View/Exercises/index.ctp:38;87
+msgid "View Grades"
+msgstr "Ver Notas"
+
+#: View/Enrollments/index.ctp:68
+#: View/Offerings/index.ctp:83
+msgid "You do not have any closed subject"
+msgstr "Você não possui disciplinas concluídas"
+
+#: View/Enrollments/index.ctp:84
+#: View/Enrollments/view.ctp:32
+#: View/Pages/home_student.ctp:116
+msgid "New Enrollment"
+msgstr "Nova Matrícula"
+
+#: View/Enrollments/index.ctp:94
+#: View/Enrollments/view.ctp:2
+#: View/Pages/home_student.ctp:126
+msgid "Enrollment"
+msgstr "Matricular"
+
+#: View/Enrollments/index.ctp:96
+#: View/Pages/home_student.ctp:128
+msgid "You do not have available subjects to enroll"
+msgstr "Não há disciplinas disponíveis"
+
+#: View/Enrollments/view.ctp:19
+#: View/Offerings/view.ctp:100
+msgid "Role"
+msgstr "Tipo"
+
+#: View/Enrollments/view.ctp:29
+msgid "Edit Enrollment"
+msgstr "Editar Oferecimento"
+
+#: View/Enrollments/view.ctp:30
+msgid "Delete Enrollment"
+msgstr "Deletar Oferecimento"
+
+#: View/Enrollments/view.ctp:31
+msgid "List Enrollments"
+msgstr "Listar Oferecimentos"
+
+#: View/ExerciseCases/add.ctp:6
+msgid "Exercise Cases: "
+msgstr "Casos de Teste: "
+
+#: View/ExerciseCases/add.ctp:10
+#: View/ExerciseCases/index.ctp:58
+#: View/ExerciseCases/view.ctp:67
+#: View/Exercises/edit.ctp:133
+msgid "New Exercise Case"
+msgstr "Novo Caso de Teste"
+
+#: View/ExerciseCases/add.ctp:14
+msgid "Show input to participants"
+msgstr "Mostrar entrada do caso de teste aos participantes"
+
+#: View/ExerciseCases/add.ctp:19
+msgid "Show expected output to participants"
+msgstr "Mostrar saída esperada aos participantes"
+
+#: View/ExerciseCases/add.ctp:24
+msgid "Show user output"
+msgstr "Mostrar saída do aluno"
+
+#: View/ExerciseCases/add.ctp:28
+#: View/ExerciseCases/view.ctp:14
+msgid "Input"
+msgstr "Entrada"
+
+#: View/ExerciseCases/add.ctp:29
+#: View/ExerciseCases/view.ctp:24
+msgid "Output"
+msgstr "Saída"
+
+#: View/ExerciseCases/add.ctp:30
+msgid "Max. Memory Size"
+msgstr "Max. Memória"
+
+#: View/ExerciseCases/add.ctp:31
+msgid "Max. Stack Size"
+msgstr "Max. Ocupação da Memória Pilha"
+
+#: View/ExerciseCases/add.ctp:32
+msgid "Max. Blocks Use"
+msgstr "Max. Tamanho de Arquivo"
+
+#: View/ExerciseCases/add.ctp:33
+msgid "Max. CPU Time"
+msgstr "Max. Tempo de CPU"
+
+#: View/ExerciseCases/add.ctp:45
+msgid "Exercise Case Files"
+msgstr "Arquivos do Caso de Teste"
+
+#: View/ExerciseCases/add.ctp:54
+#: View/Exercises/add.ctp:74
+#: View/Exercises/edit.ctp:75
+msgid "You can drag and drop your files here"
+msgstr "Você pode arrastar e soltar os arquivos aqui"
+
+msgid "Do not forget to save the changes after upload any new files above"
+msgstr "Não esqueça de salvar as alterações, no caso de ter feito o upload de algum arquivo novo"
+
+msgid "A click in %s will erase the selected file instantly"
+msgstr "Clicando em %s você irá apagar o arquivo escolhido instantaneamente"
+
+msgid "Remove"
+msgstr "Remover"
+
+msgid "seconds"
+msgstr "segundos"
+
+#: View/ExerciseCases/add.ctp:64
+msgid "The End"
+msgstr "Fim"
+
+#: View/ExerciseCases/add.ctp:68
+msgid "By clicking in %s you will register the exercise case"
+msgstr "Clicando em %s você irá salvar o caso de teste"
+
+#: View/ExerciseCases/edit.ctp:4
+#: View/ExerciseCases/view.ctp:64
+msgid "Edit Exercise Case"
+msgstr "Editar Caso de Teste"
+
+#: View/ExerciseCases/edit.ctp:27
+#: View/ExerciseCases/view.ctp:66
+#: View/Exercises/edit.ctp:132
+msgid "List Exercise Cases"
+msgstr "Listar Casos de Teste"
+
+#: View/ExerciseCases/edit.ctp:28
+#: View/ExerciseCases/index.ctp:59
+#: View/ExerciseCases/view.ctp:68
+#: View/Exercises/edit.ctp:127
+msgid "List Exercises"
+msgstr "Listar Exercícios"
+
+#: View/ExerciseCases/edit.ctp:30
+#: View/ExerciseCases/index.ctp:61
+#: View/ExerciseCases/view.ctp:70
+msgid "List Exercise Case Files"
+msgstr "Listar Arquivos de Caso de Teste"
+
+#: View/ExerciseCases/edit.ctp:31
+#: View/ExerciseCases/index.ctp:62
+#: View/ExerciseCases/view.ctp:71;105
+msgid "New Exercise Case File"
+msgstr "Novo Arquivo de Caso de Teste"
+
+#: View/ExerciseCases/edit.ctp:32
+#: View/ExerciseCases/index.ctp:63
+#: View/ExerciseCases/view.ctp:72
+msgid "List Commits"
+msgstr "Listar Entregas"
+
+#: View/ExerciseCases/edit.ctp:33
+#: View/ExerciseCases/index.ctp:64
+#: View/ExerciseCases/view.ctp:73;144
+#: View/Exercises/view.ctp:66
+msgid "New Commit"
+msgstr "Novo Envio"
+
+#: View/ExerciseCases/index.ctp:2
+msgid "Exercise Cases"
+msgstr "Casos de Teste"
+
+#: View/ExerciseCases/index.ctp:49
+msgid "previous"
+msgstr "anterior"
+
+#: View/ExerciseCases/index.ctp:51
+msgid "next"
+msgstr "próximo"
+
+#: View/ExerciseCases/view.ctp:2
+msgid "Exercise Case"
+msgstr "Caso de Teste"
+
+#: View/ExerciseCases/view.ctp:9
+#: View/Exercises/index.ctp:21
+#: View/Offerings/view.ctp:47;140
+#: View/Pages/home_student.ctp:48
+msgid "Exercise"
+msgstr "Exercício"
+
+#: View/ExerciseCases/view.ctp:19
+msgid "Input Type"
+msgstr "Tipo de Entrada"
+
+#: View/ExerciseCases/view.ctp:29
+msgid "Output Type"
+msgstr "Tipo de Saída"
+
+#: View/ExerciseCases/view.ctp:34
+#: View/Exercises/view_professor.ctp:59
+msgid "Show Input"
+msgstr "Mostrar Entrada"
+
+#: View/ExerciseCases/view.ctp:39
+#: View/Exercises/view_professor.ctp:60
+msgid "Show Expected Output"
+msgstr "Mostrar Saída Esperada"
+
+#: View/ExerciseCases/view.ctp:44
+msgid "Maxmemsize"
+msgstr ""
+
+#: View/ExerciseCases/view.ctp:49
+msgid "Cputime"
+msgstr ""
+
+#: View/ExerciseCases/view.ctp:54
+msgid "Stacksize"
+msgstr ""
+
+#: View/ExerciseCases/view.ctp:65
+msgid "Delete Exercise Case"
+msgstr "Excluir Caso de Teste"
+
+#: View/ExerciseCases/view.ctp:77
+msgid "Related Exercise Case Files"
+msgstr "Arquivos Relacionados ao Caso de Teste"
+
+#: View/ExerciseCases/view.ctp:82
+msgid "Exercise Case Id"
+msgstr "Id do Caso de Teste"
+
+#: View/ExerciseCases/view.ctp:83
+msgid "Path"
+msgstr "Caminho"
+
+#: View/ExerciseCases/view.ctp:110
+msgid "Related Commits"
+msgstr "Entregas Relacionadas"
+
+#: View/ExerciseCases/view.ctp:115
+msgid "Users Email"
+msgstr ""
+
+#: View/ExerciseCases/view.ctp:116
+msgid "Exercises Id"
+msgstr "Id do Exercício"
+
+#: View/ExerciseCases/view.ctp:117
+msgid "Commit Time"
+msgstr "Hora da Entrega"
+
+msgid "Commit"
+msgstr "Entrega"
+
+#: View/ExerciseCases/view.ctp:119
+msgid "Hash"
+msgstr ""
+
+#: View/Exercises/add.ctp:27
+#: View/Exercises/edit.ctp:27
+#: View/Exercises/index.ctp:5
+#: View/Offerings/view.ctp:36
+msgid "Exercises"
+msgstr "Exercícios"
+
+#: View/Exercises/add.ctp:51
+#: View/Exercises/edit.ctp:52
+#: View/Exercises/view.ctp:27
+#: View/Exercises/view_professor.ctp:31
+msgid "Description"
+msgstr "Descrição"
+
+#: View/Exercises/add.ctp:52
+#: View/Exercises/edit.ctp:53
+#: View/Exercises/index.ctp:25
+#: View/Exercises/view.ctp:29
+#: View/Exercises/view_professor.ctp:33
+#: View/Offerings/view.ctp:51
+#: View/Pages/home_student.ctp:52
+msgid "Deadline"
+msgstr "Prazo de Entrega"
+
+#: View/Exercises/add.ctp:53
+#: View/Exercises/edit.ctp:54
+msgid "Allowed Types"
+msgstr "Tipos Permitidos"
+
+#: View/Exercises/add.ctp:65
+#: View/Exercises/edit.ctp:66
+msgid "Exercise Files"
+msgstr "Arquivos do Exercício"
+
+#: View/Exercises/add.ctp:69
+#: View/Exercises/edit.ctp:70
+msgid "You can attach any file to your exercise, for example, a pdf with detailed instructions or additional libraries. All participants will have access to these files"
+msgstr "Você pode anexar qualquer arquivo ao exercício, por exemplo, um PDF com a descrição detalhada ou bibliotecas adicionais. Todos os participantes terão acesso a estes arquivos"
+
+#: View/Exercises/add.ctp:84
+#: View/Exercises/edit.ctp:85
+msgid "Are you sure that all exercise information is correct?"
+msgstr "Você tem certeza que todas as informações do exercício estão corretas?"
+
+#: View/Exercises/add.ctp:88
+msgid "By clicking in %s you will register the exercise, in the next page you will can add the test cases"
+msgstr "Clicando em %s você irá salvar o exercício, na próxima página será possível adicionar os casos de teste"
+
+#: View/Exercises/edit.ctp:89
+msgid "By clicking in %s you will update the exercise"
+msgstr "Clicando em %s você irá salvar as alterações no exercício"
+
+#: View/Exercises/edit.ctp:111
+#: View/Exercises/view_professor.ctp:8
+msgid "Edit Exercise"
+msgstr "Editar Exercício"
+
+msgid "Remove Exercise"
+msgstr "Remover Exercício"
+
+#: View/Exercises/edit.ctp:130
+msgid "List Exercise Files"
+msgstr "Listar Arquivos de Exercício"
+
+#: View/Exercises/edit.ctp:131
+msgid "New Exercise File"
+msgstr "Novo Arquivo de Exercício"
+
+#: View/Exercises/index.ctp:23
+#: View/Offerings/view.ctp:49
+#: View/Pages/home_student.ctp:50
+msgid "Correct Cases"
+msgstr "Casos Corretos"
+
+#: View/Exercises/index.ctp:24
+#: View/Offerings/view.ctp:50
+#: View/Pages/home_student.ctp:51
+msgid "Grade"
+msgstr "Nota"
+
+#: View/Exercises/index.ctp:46
+msgid "Undelivered"
+msgstr "Não entregue"
+
+#: View/Exercises/index.ctp:47
+msgid "0/5"
+msgstr ""
+
+#: View/Exercises/index.ctp:50;60
+msgid "Submit a new file"
+msgstr "Envie um novo arquivo"
+
+#: View/Exercises/index.ctp:57
+msgid "2/3"
+msgstr ""
+
+#: View/Exercises/index.ctp:65
+msgid "You do not have any open exercise"
+msgstr "Você não tem nenhum exercício aberto"
+
+#: View/Exercises/index.ctp:94
+msgid "You do not have any closed exercise"
+msgstr "Você não tem nenhum exercício fechado"
+
+#: View/Exercises/view.ctp:38
+msgid "Files"
+msgstr "Arquivos"
+
+#: View/Exercises/view.ctp:42
+msgid "File"
+msgstr "Arquivo"
+
+#: View/Exercises/view.ctp:48
+msgid "This exercise accept the following types"
+msgstr "Este exercício aceita os seguintes tipos de arquivos"
+
+#: View/Exercises/view.ctp:70
+msgid "Select File"
+msgstr "Selecionar Arquivo"
+
+#: View/Exercises/view.ctp:85;229
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: View/Exercises/view.ctp:98
+msgid "My Last Commit"
+msgstr "Meu Último Envio"
+
+#: View/Exercises/view.ctp:117
+#: View/Exercises/view_professor.ctp:54
+msgid "Case"
+msgstr "Caso"
+
+#: View/Exercises/view.ctp:119
+msgid "CPU Time Used"
+msgstr "Tempo de CPU"
+
+#: View/Exercises/view.ctp:120
+msgid "Mem Size Used"
+msgstr "Tam. de Memória Utilizado"
+
+#: View/Exercises/view.ctp:127
+#: View/Exercises/view_professor.ctp:68
+msgid "Case "
+msgstr "Caso "
+
+#: View/Exercises/view.ctp:145
+msgid "Commits"
+msgstr "Entregas"
+
+#: View/Exercises/view.ctp:152
+#: View/Exercises/view_professor.ctp:127;159
+#: View/Tickets/index.ctp:13
+msgid "Date"
+msgstr "Data"
+
+#: View/Exercises/view.ctp:154
+#: View/Exercises/view_professor.ctp:129;161
+msgid "Corrects"
+msgstr "Corretos"
+
+#: View/Exercises/view.ctp:155
+#: View/Exercises/view_professor.ctp:130;162
+msgid "Score"
+msgstr "Notas"
+
+#: View/Exercises/view.ctp:208
+msgid "Uploading"
+msgstr "Enviando"
+
+#: View/Exercises/view.ctp:233
+msgid "Reloading"
+msgstr "Recarregando"
+
+#: View/Exercises/view_professor.ctp:43
+msgid "Cases"
+msgstr "Casos de Teste"
+
+#: View/Exercises/view_professor.ctp:46
+msgid "+ New Case"
+msgstr "+ Novo Caso"
+
+#: View/Exercises/view_professor.ctp:55
+msgid "Max Mem Size"
+msgstr "Maximo Tam. de Memória"
+
+#: View/Exercises/view_professor.ctp:56
+msgid "CPU Time"
+msgstr "Tempo de Execução"
+
+#: View/Exercises/view_professor.ctp:57
+msgid "File Size"
+msgstr "Tamanho do Arquivo"
+
+#: View/Exercises/view_professor.ctp:58
+msgid "Stack Size"
+msgstr ""
+
+#: View/Exercises/view_professor.ctp:61
+msgid "Show User Output"
+msgstr "Mostrar Saída do Aluno"
+
+#: View/Exercises/view_professor.ctp:96
+msgid "Edit Case"
+msgstr "Editar Caso"
+
+#: View/Exercises/view_professor.ctp:112
+msgid "Information"
+msgstr "Informações"
+
+#: View/Exercises/view_professor.ctp:144;176
+msgid "Details"
+msgstr "Detalhes"
+
+#: View/Exercises/view_professor.ctp:146;178
+msgid "Recompile"
+msgstr "Recompilar"
+
+#: View/Layouts/default.ctp:57;73
+msgid "Dashboard"
+msgstr ""
+
+#: View/Layouts/default.ctp:59
+msgid "Profile"
+msgstr "Perfil"
+
+#: View/Layouts/default.ctp:60
+msgid "Logout"
+msgstr "Sair"
+
+#: View/Layouts/default.ctp:74
+#: View/Tickets/index.ctp:5
+msgid "Tickets"
+msgstr "Chamados"
+
+#: View/Layouts/default.ctp:77
+#: View/Offerings/add.ctp:5
+#: View/Offerings/index.ctp:99
+msgid "Offerings"
+msgstr "Oferecimentos"
+
+#: View/Layouts/default.ctp:80
+msgid "Visits Report"
+msgstr "Visitantes"
+
+#: View/Offerings/add.ctp:10
+msgid "Add Offering"
+msgstr "Novo Oferecimento"
+
+#: View/Offerings/add.ctp:13
+#: View/Offerings/index.ctp:23;58
+#: View/Offerings/view.ctp:24
+msgid "Year"
+msgstr "Ano"
+
+#: View/Offerings/add.ctp:14
+#: View/Offerings/index.ctp:24;59
+#: View/Offerings/view.ctp:23
+msgid "Term"
+msgstr "Semestre"
+
+#: View/Offerings/add.ctp:15
+#: View/Offerings/index.ctp:25;60
+#: View/Offerings/view.ctp:25
+msgid "Classroom"
+msgstr "Turma"
+
+#: View/Offerings/edit.ctp:4
+msgid "Edit Offering"
+msgstr "Editar Oferecimento"
+
+#: View/Offerings/index.ctp:5
+msgid "My Offerings"
+msgstr "Meus Oferecimentos"
+
+#: View/Offerings/index.ctp:26;61
+msgid "Action"
+msgstr "Ação"
+
+#: View/Offerings/view.ctp:9
+msgid "Professors: "
+msgstr "Professores: "
+
+#: View/Offerings/view.ctp:16
+msgid "Assistant Professors: "
+msgstr "Monitores:"
+
+#: View/Offerings/view.ctp:39
+msgid "+ New Exercise"
+msgstr "+ Novo Exercício"
+
+#: View/Offerings/view.ctp:71;75
+#: View/Pages/home_student.ctp:67
+msgid "View Details"
+msgstr "Ver Detalhes"
+
+#: View/Offerings/view.ctp:72
+msgid "Verify Similarity"
+msgstr "Verificar Similaridade"
+
+#: View/Offerings/view.ctp:73
+msgid "Add Case"
+msgstr "Adicionar Caso de Teste"
+
+#: View/Offerings/view.ctp:91
+msgid "Participants"
+msgstr "Participantes"
+
+#: View/Offerings/view.ctp:99
+#: View/Users/add.ctp:19
+#: View/Users/login.ctp:47
+#: View/Users/view.ctp:4
+msgid "Email"
+msgstr ""
+
+#: View/Offerings/view.ctp:115
+msgid "Set as Professor"
+msgstr "Definir como Professor"
+
+msgid "Set as Student"
+msgstr "Definir como Aluno"
+
+#: View/Offerings/view.ctp:116
+msgid "Set as Assistant"
+msgstr "Definir como Monitor"
+
+#: View/Offerings/view.ctp:132
+msgid "Score Summary"
+msgstr "Resumo de Notas"
+
+#: View/Pages/home_student.ctp:22
+msgid "To: "
+msgstr "Para: "
+
+#: View/Pages/home_student.ctp:23
+msgid "System Alert"
+msgstr "Alertas do Sistema"
+
+#: View/Pages/home_student.ctp:39
+msgid "Next Deadlines"
+msgstr "Próximas Entregas"
+
+#: View/Pages/home_student.ctp:74
+msgid "You do not have any exercise to submit in the next days"
+msgstr "Você não tem exercícios para submeter nos próximos dias"
+
+#: View/Pages/home_student.ctp:86
+msgid "My Subjects"
+msgstr "Minhas Disciplinas"
+
+#: View/Pages/home_student.ctp:89
+msgid "+ New Offering"
+msgstr "+ Novo Oferecimento"
+
+#: View/Pages/home_student.ctp:123
+msgid "Available Offerings:"
+msgstr "Disciplinas Disponíveis: "
+
+#: View/Pages/home_student.ctp:160
+msgid "Talk with the Admin"
+msgstr "Fale com o Administrador: "
+
+#: View/Pages/home_student.ctp:172
+msgid "Send"
+msgstr "Enviar "
+
+#: View/Tickets/add.ctp:4
+msgid "Add Ticket"
+msgstr "Adicionar Chamado"
+
+#: View/Tickets/add.ctp:21
+#: View/Tickets/edit.ctp:23
+#: View/Tickets/view.ctp:51
+msgid "List Tickets"
+msgstr "Listar Chamados"
+
+#: View/Tickets/edit.ctp:4
+#: View/Tickets/view.ctp:49
+msgid "Edit Ticket"
+msgstr "Editar Chamado"
+
+#: View/Tickets/index.ctp:12
+msgid "Opened by"
+msgstr "Aberto por"
+
+#: View/Tickets/index.ctp:53
+msgid "View Message"
+msgstr "Ver Mensagem"
+
+#: View/Tickets/index.ctp:54
+msgid "Set as Solved"
+msgstr "Marcar como Resolvido"
+
+#: View/Tickets/index.ctp:55
+msgid "Close"
+msgstr "Fechar"
+
+#: View/Tickets/index.ctp:84
+msgid "View Ticket"
+msgstr "Visualizar Chamado"
+
+#: View/Tickets/view.ctp:2
+msgid "Ticket"
+msgstr "Chamado"
+
+#: View/Tickets/view.ctp:14
+msgid "Datetime"
+msgstr ""
+
+#: View/Tickets/view.ctp:29
+msgid "Solved"
+msgstr "Resolvido"
+
+#: View/Tickets/view.ctp:34
+msgid "Priority"
+msgstr "Prioridade"
+
+#: View/Tickets/view.ctp:50
+msgid "Delete Ticket"
+msgstr "Deletar Chamado"
+
+#: View/Tickets/view.ctp:52
+msgid "New Ticket"
+msgstr "Novo Chamado"
+
+#: View/Users/add.ctp:10
+msgid "Sign Up!"
+msgstr "Cadastrar"
+
+#: View/Users/add.ctp:21
+#: View/Users/login.ctp:48
+#: View/Users/view.ctp:14
+msgid "Password"
+msgstr "Senha"
+
+#: View/Users/add.ctp:22
+msgid "Confirm Password"
+msgstr "Confirmar Senha"
+
+#: View/Users/add.ctp:23
+msgid "Sign Up"
+msgstr "Cadastrar"
+
+#: View/Users/login.ctp:16
+msgid "Sign Up Now!"
+msgstr "Cadastre-se Agora!"
+
+#: View/Users/login.ctp:27
+msgid "I'm already registered!"
+msgstr "Já estou cadastrado"
+
+#: View/Users/login.ctp:49
+msgid "Login"
+msgstr "Login"
+
+#: View/Users/view.ctp:24
+msgid "Creation"
+msgstr "Criado"
+
+#: View/Users/view.ctp:29
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#: View/Users/view.ctp:39
+msgid "Edit User"
+msgstr "Editar Usuário"
+
+#: View/Users/view.ctp:40
+msgid "Delete User"
+msgstr "Deletar Usuário"
+
+#: Model/Alert.php:validation for field type
+msgid "checkType"
+msgstr ""
+
+#: Model/Alert.php:validation for field recipients
+msgid "checkRecipients"
+msgstr ""
+
+#: Model/Alert.php:validation for field user_email
+#: Model/Commit.php:validation for field users_email
+#: Model/Enrollment.php:validation for field user_email
+#: Model/User.php:validation for field email
+msgid "email"
+msgstr ""
+
+#: Model/Alert.php:validation for field valid
+msgid "date"
+msgstr ""
+
+#: Model/Alert.php:validation for field title;validation for field message
+#: Model/Commit.php:validation for field users_email
+#: Model/Course.php:validation for field code;validation for field title
+#: Model/Exercise.php:validation for field title
+#: Model/ExerciseCaseFile.php:validation for field path
+#: Model/Ticket.php:validation for field users_email;validation for field message
+#: Model/User.php:validation for field name;validation for field password
+msgid "notempty"
+msgstr ""
+
+#: Model/AllowedFile.php:validation for field name;validation for field extension
+#: Model/Course.php:validation for field code;validation for field title
+#: Model/Exercise.php:validation for field title
+#: Model/Offering.php:validation for field classroom
+#: Model/User.php:validation for field email;validation for field name;validation for field password
+msgid "maxlength"
+msgstr ""
+
+#: Model/AllowedFile.php:validation for field name
+#: Model/Exercise.php:validation for field title
+#: Model/User.php:validation for field password
+msgid "minlength"
+msgstr ""
+
+#: Model/AllowedFile.php:validation for field extension
+msgid "notEmpty"
+msgstr ""
+
+#: Model/AllowedFile.php:validation for field compilable
+#: Model/ExerciseCase.php:validation for field show_input;validation for field show_expected_output
+#: Model/Ticket.php:validation for field solved
+msgid "boolean"
+msgstr ""
+
+#: Model/Commit.php:validation for field exercises_id;validation for field status;validation for field corrects
+#: Model/Enrollment.php:validation for field offering_id;validation for field role
+#: Model/Exercise.php:validation for field offering_id
+#: Model/ExerciseCase.php:validation for field exercise_id;validation for field input_type;validation for field output_type;validation for field maxmemsize;validation for field cputime;validation for field stacksize
+#: Model/ExerciseCaseFile.php:validation for field exercise_case_id
+#: Model/ExerciseFile.php:validation for field exercise_id
+#: Model/Offering.php:validation for field course_id;validation for field year;validation for field term
+#: Model/Ticket.php:validation for field type;validation for field status;validation for field priority
+#: Model/User.php:validation for field type
+msgid "numeric"
+msgstr ""
+
+#: Model/Exercise.php:validation for field deadline
+msgid "datetime"
+msgstr ""
+
+#: Model/Exercise.php:validation for field AllowedFile
+msgid "Please select at least one language"
+msgstr "Por favor selecione pelo menos uma linguagem"
+
+#: Model/Offering.php:validation for field year
+msgid "The field year must have 4 digits"
+msgstr "O campo ano deve ter 4 dígitos"
+
+#: Model/Offering.php:validation for field end_date
+msgid "Insert a valid date"
+msgstr "Insira uma data válida"
+
+#: Model/User.php:validation for field confirm_password
+msgid "The passwords does not match!"
+msgstr "As senhas não coincidem"
+
+msgid "Server's Clock"
+msgstr "Hora do Servidor"
+
+msgid "Change Password"
+msgstr "Trocar Senha"
+
+msgid "Profile"
+msgstr "Dados Pessoais"
+
+msgid "Confirm Changes"
+msgstr "Confirmar Alterações"
+
+msgid "University"
+msgstr "Universidade"
+
+msgid "Universities"
+msgstr "Universidades"
+
+msgid "Student ID"
+msgstr "Identificação de Aluno"
+
+msgid "Current Password"
+msgstr "Senha Atual"
+
+msgid "New Password"
+msgstr "Nova Senha"
+
+msgid "Please, complete your register with your university"
+msgstr "Por favor, complete seu cadastro informando sua universidade"
+
+msgid "Forgot your password?"
+msgstr "Esqueceu sua senha?"
+
+msgid "Messages"
+msgstr "Mensagens"
+
+msgid "We will send another password for you"
+msgstr "O sistema enviará uma nova senha para o seu email"
+
+msgid "Compiled Message"
+msgstr "Mensagem da Compilação"
+
+msgid "View Details as Professor"
+msgstr "Ver como Professor"
+
+msgid "General Info"
+msgstr "Informações Gerais"
+
+msgid "View in Browser"
+msgstr "Ver no Navegador"
+
+msgid "Size"
+msgstr "Tamanho"
+
+msgid "View as Student"
+msgstr "Ver como Aluno"
+
+msgid "View as Professor"
+msgstr "Ver como Professor"
+
+msgid "Student"
+msgstr "Aluno"
+
+msgid "Remove Student"
+msgstr "Remover Aluno"
+
+msgid "You can attach files to your exercise case to be used in the execution, like an image for processing. All files attached here will be moved to the same directory in each execution to test this case. The students will NOT have access to these files"
+msgstr "Você pode anexar qualquer arquivo para a execução do caso de teste, por exemplo uma imagem para ser processada pelo código do exercício. Todos os arquivos serão movidos para a pasta do executável em cada teste deste caso. Os alunos NÃO terão acesso a estes arquivos"
+
+msgid "Text"
+msgstr "Texto"
+
+msgid "Numbers with Error"
+msgstr "Números com Margem de Erro"
+
+msgid "Binary"
+msgstr "Binário"
+
+msgid "For the textual output the system will compare the student output with the case output. The user output must be identical with the case output to be correct"
+msgstr "Para o formato de saída textual o sistema irá comparar a saída do aluno com a do caso de teste. A saída do aluno deve ser idêntica a do caso para ser considerada correta"
+
+msgid "For the numeric output the system will compare the student output numbers with the case output numbers considering the maximum absolute error allowed. You must inform the maximum absolute error allowed for the output numbers"
+msgstr "Para o formato de saída numérico o sistema irá comparar a saída do aluno com a do caso de teste considerando o erro máximo absoluto permitido. Você deverá informar o valor máximo absoluto do erro permitido aos números da saída do exercício"
+
+msgid "For the binary output the system will consider the user output as a binary (The student must write the binary data in the stardard output). You must inform the file name for comparison and upload the file in the box below"
+msgstr "Para o formato de saída binário o sistema irá considera a saída do aluno como binário (O aluno deverá escrever a informação em binário na 'standard output'). Você deverá informar o nome do arquivo considerado como output e realizar o upload do arquivo na caixa abaixo"
+
+msgid "Output Type"
+msgstr "Tipo de Saída"
+
+msgid "Output Error Accepted"
+msgstr "Margem de Erro Aceita"
+
+msgid "Please, complete your register with your university"
+msgstr "Por favor, complete seu cadastro com as informações sobre sua universidade"
+
+msgid "You only can publish alerts if you are the professor of some offering"
+msgstr "Você só poderá publicar avisos se for o professor de alguma disciplina ativa"
+
+msgid "Add Cases in Batch"
+msgstr "Adicionar Casos em Lote"
+
+msgid "Recompile All"
+msgstr "Recompilar Todos"
+
+msgid "Last 24h Visits"
+msgstr "Visitas (últimas 24 horas)"
+
+msgid "Last 24h Commits"
+msgstr "Entregas (últimas 24 horas)"
+
+msgid "Last 24h Commits Status"
+msgstr "Status das Entregas  (últimas 24 horas)"
+
+msgid "New/Current Users"
+msgstr "Novos/Antigos Usuários"
+
+msgid "Unique Visitors"
+msgstr "Visitantes Únicos"
+
+msgid "Visits"
+msgstr "Visitas"
+
+msgid "Last 30 minutes"
+msgstr "Últimos 30 minutos"
+
+msgid "Last 6 hours"
+msgstr "Últimas 6 horas"
+
+msgid "Last 24 hours"
+msgstr "Últimas 24 horas"
+
+msgid "New Users"
+msgstr "Novos Usuários"
+
+msgid "Logged"
+msgstr "Login Realizado"
+
+msgid "Scores"
+msgstr "Notas"
+
+msgid "Participants that Committed"
+msgstr "Participantes que Entregaram"
+
+msgid "Participants with Commit"
+msgstr "Participantes com Entrega"
+
+msgid "Participants without Commit"
+msgstr "Participantes sem Entrega"
+
+msgid "Commits Status"
+msgstr "Status das Entregas"
+
+msgid "Average Grade"
+msgstr "Nota Média"
+
+msgid "Maximum Grade"
+msgstr "Nota Máxima"
+
+msgid "Grades Overview"
+msgstr "Notas: Visão Geral"
+
+msgid "Verify Similarity Based on"
+msgstr "Verificar Similaridade Baseado em"
+
+msgid "As Text"
+msgstr "Como texto"
+
+msgid "Files with this extension in that exercise"
+msgstr "Arquivos com esta extensão neste exercício"
+
+msgid "If you do not know who language select, your exercise accepts more than one language or the language used is not listed, please choice"
+msgstr "Se você tem dúvidas sobre qual linguagem escolher, se seu exercício aceita mais de uma linguagem de programação, ou se a linguagem utilizada não está listada, por favor escolha"
+
+msgid "Hide Alerts"
+msgstr "Esconder Avisos"
+
+msgid "Show Alerts"
+msgstr "Mostrar Avisos"
+
+msgid "Hide Stats"
+msgstr "Esconder Estatísticas"
+
+msgid "Show Stats"
+msgstr "Mostrar Estatísticas"
+
+msgid "or"
+msgstr "ou"
+
+msgid "Download All"
+msgstr "Download Todos"
+
+msgid "Select a participant"
+msgstr "Selecione um participante"
+
+msgid "Your commit is waiting to be automatically processed"
+msgstr "Sua entrega está aguardando para ser corrigida automaticamente"
+
+msgid "Your commit is being compiled"
+msgstr "Sua entrega está sendo compilada"
+
+msgid "Your commit is waiting to be executed"
+msgstr "Sua entrega está aguardando para ser executada"
+
+msgid "Your commit is being executed"
+msgstr "Sua entrega está sendo executada"
+
+msgid "Your commit has not reached all cases correct"
+msgstr "Sua entrega não obteve a resposta correta de todos os casos"
+
+msgid "Your commit reached all cases correct"
+msgstr "Sua entrega obteve resposta correta em todos os casos"
+
+msgid "Your commit resulted in an error"
+msgstr "Sua entrega resultou em um erro"
+
+msgid "Your commit will not be processed automatically, and is currently waiting an manual feedback"
+msgstr "Sua entrega não será processada automaticamente, ela está aguardando uma resposta manual dos responsáveis pela turma"
+
+msgid "talk.with.us"
+msgstr "fale.conosco"
+
+msgid "about"
+msgstr "sobre"
+
+msgid "Attach here each case input and output. <br>You must follow this model: <br>Each case must have two files: [case_name].in is the input file and [case_name].out is the output file. <br>Each case name must be different, and can not have spaces or special caracters. <br>Others files with pattern [case_name].ext may be added as case file in the same case.<br>If any [case_name].in does not have an correspondent [case_name].out or vice-versa, it will be disconsidered."
+msgstr "Adicione aqui cada arquivo de entrada e saída. <br>Você deve seguir este modelo: <br>Cada caso deve ter um par de arquivos: [nome_do_caso].in para o arquivo de entrada e [nome_do_caso].out para o modelo de saída. <br> Cada nome de caso deve ser diferente, e não pode ter espaços ou caracteres especiais. <br>Outros arquivos com o padrão [nome_do_caso].ext podem ser adicionados como arquivos do caso de teste. <br>Se algum [nome_do_caso].in não tiver um arquivo correspondente [nome_do_caso].out ou vice-versa, o caso será desconsiderado."
+
+msgid "You must follow this model"
+msgstr "Você deve seguir este modelo"
+
+msgid "Add Exercise Cases in Batch"
+msgstr "Adicionar casos de teste em lote"
+
+msgid "Select a participant"
+msgstr "Selecione um participante"
+
+msgid "Talk with the Students"
+msgstr "Enviar email aos participantes"
+
+msgid "Email Subject"
+msgstr "Assunto do Email"
+
+msgid "Attachments"
+msgstr "Anexos"
+
+msgid "General Information"
+msgstr "Informações Gerais"
+
+msgid "Participants and Grades"
+msgstr "Participantes e Notas"
+
+msgid "Send mail"
+msgstr "Enviar e-mail"
+
+msgid "Compilable"
+msgstr "Compilável"
+
+msgid "Show exercise before open date to participants"
+msgstr "Mostrar exercícios aos alunos antes da data de abertura"
+
+msgid "Select Files"
+msgstr "Selecionar Arquivos"
+
+msgid "Accepted"
+msgstr "Correto"
+
+msgid "Rejected"
+msgstr "Incorreto"
+
+msgid "Comparing cases as text. Successfully executed."
+msgstr "Comparando casos como texto. Executado com sucesso."
+
+msgid "Successfully Compiled"
+msgstr "Compilado com Sucesso"
+
+msgid "This is an automatic email sent from"
+msgstr "Este é um email automático enviado por"
+
+msgid "please do not reply it!"
+msgstr "por favor, não responda"
+
+msgid "If you have any question, visit"
+msgstr "Em caso de dúvidas, visite"
+
+msgid "Please select a open date before the exercise deadline"
+msgstr "Por favor, selecione uma data de abertura anterior a data de encerramento"
+
+msgid "View Case Input"
+msgstr "Ver Entrada"
+
+msgid "View Case Output"
+msgstr "Ver Saída Esperada"
+
+msgid "View Commit Output"
+msgstr "Ver Saída do Envio"
+
+msgid "Course Code"
+msgstr "Código da Disciplina"
+
+msgid "Course Title"
+msgstr "Nome da Disciplina"
+
+msgid "There are %d courses from your university in the system"
+msgstr "Foram encontrados %d disciplinas da sua universidade no sistema"
+
+msgid "Please, use the form below to filter the list of courses available"
+msgstr "Por favor, utilize o formulário abaixo para filtrar as disciplinas disponíveis"
+
+msgid "Offering Details"
+msgstr "Detalhes do Oferecimento"
+
+msgid "Sign In with Linkedin"
+msgstr "Entrar com Linkedin"
+
+msgid "Confirm your register on"
+msgstr "Confirme seu cadastro no"
+
+msgid "Type a part of the"
+msgstr "Digite parte do"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Exercise Type"
+msgstr "Tipo de Exercício"
+
+msgid "Compilable or Interpretable File"
+msgstr "Código Compilável ou Interpretável"
+
+msgid "Simple File"
+msgstr "Arquivo Simples"
+
+msgid "Select All Allowed File Types"
+msgstr "Selecione todos os tipos de arquivos permitidos"
+
+msgid "Open Date"
+msgstr "Data de Abertura"
+
+msgid "Comparing cases as text. Successfully executed."
+msgstr "Comparando Caso como Texto. Executado com Sucesso."
+
+msgid "View Case Information"
+msgstr "Ver Informações do Caso de Teste"
+
+msgid "Exercise Case Input"
+msgstr "Entrada do Caso de Teste"
+
+msgid "Expected Output"
+msgstr "Saída Esperada do Caso de Teste"
+
+msgid "User Output"
+msgstr "Saída Produzida pelo Envio"
+
+msgid "Your password has been changed, we will send you the new password soon"
+msgstr "Sua senha foi alterada, você receberá um email com a nova senha em breve"
+
+msgid "Your new account password"
+msgstr "Sua nova senha"
+
+msgid "Hello %s,"
+msgstr "Olá %s,"
+
+msgid "You are receiving this email because you requested a new password."
+msgstr "Você está recebendo este email por que requisitou uma nova senha"
+
+msgid "Your new password is: %s"
+msgstr "Sua nova senha é: %s"
+
+msgid "This is an email sent by run.codes, you received it because is currently registered at runb.codes"
+msgstr "Este email foi enviado por run.codes, você recebeu ele por que está cadastrado no run.codes"
+
+msgid "Do not reply it! Contact support@run.codes to further information"
+msgstr "Não responda este email! Contate support@run.codes para mais informações"
+
+msgid "The system can not change your password, please try later or contact the run.codes admin"
+msgstr "O sistema não pode alterar sua senha, por favor tente novamente mais tarde ou contate support@run.codes"
+
+msgid "Your account is not confirmed, you have received an email with the link to confirm the account"
+msgstr "Sua conta não foi confirmada, você recebeu um email com o link para a confirmação"
+
+msgid "This email is not registered in the system"
+msgstr "Este email não está cadastrado no sistema"
+
+msgid "The system can not change your password, please try later or contact support@run.codes"
+msgstr "O sistema não pode alterar sua senha, por favor tente novamente mais tarde ou contact support@run.codes"
+
+msgid "The new password and the confirmation do not match"
+msgstr "A nova senha e sua confirmação são diferentes"
+
+msgid "Your password has been changed"
+msgstr "Sua senha foi alterada com sucesso"
+
+msgid "The current password is incorrect"
+msgstr "A senha atual está incorreta"
+
+msgid "Your profile has not been updated"
+msgstr "Seu perfil não pode ser atualizado"
+
+msgid "Your profile has been updated"
+msgstr "Seu perfil foi atualizado com sucesso"
+
+msgid "Maybe you have not confirmed your registration by email"
+msgstr "Provavelmente você não confirmou seu cadastro pelo email"
+
+msgid "This email is used in an account without Linkedin connection"
+msgstr "Este email é utilizado para uma conta sem conexão com o Linkedin"
+
+msgid "By clicking in %s you agree with the"
+msgstr "Clicando em %s você concorda com os"
+
+msgid "Terms of Use"
+msgstr "Termos de Uso"
+
+msgid "By browsing in %s you agree with the"
+msgstr "Ao navegar no run.codes você concorda com os"
+
+msgid "The user %s is an assistant professor now"
+msgstr "O usuário %s é um monitor agora"
+
+msgid "The user %s is a professor now"
+msgstr "O usuário %s é um professor agora"
+
+msgid "The user %s is a student now"
+msgstr "O usuário %s é um aluno agora"
+
+msgid "There are no exercises available"
+msgstr "Não existem exercícios disponíveis"
+
+msgid "Create New Offering"
+msgstr "Criar Nova Turma"
+
+msgid "Active Offerings"
+msgstr "Turmas Ativas"
+
+msgid "Professor Menu"
+msgstr "Menu Professor"
+
+msgid "Register"
+msgstr "Cadastrar"
+
+msgid "This case uses a lot of memory and can not be edited in browser"
+msgstr "Este caso utiliza muita memória, e por isso não pode ser editado no navegador"
+
+msgid "This case input is so big that can not be visualized in browser"
+msgstr "A entrada deste caso é muito grande, e por isso não pode ser visualizada no navegador"
+
+msgid "This case output is so big that can not be visualized in browser"
+msgstr "A saída deste caso é muito grande, e por isso não pode ser visualizada no navegador"
+
+msgid "This commit output is so big that can not be visualized in browser"
+msgstr "A saída produzida nesta execução é muito grande, e por isso não pode ser visualizada no navegador"
+
+msgid "Comparing cases as text. Problems while executing."
+msgstr "Comparando caso como texto. Problemas na execução."
+
+msgid "Export Grades Table"
+msgstr "Exportar Tabela de Notas"
+
+msgid "Grades Table"
+msgstr "Tabela de Notas"
+
+msgid "This account is registered with LinkedIn"
+msgstr "Esta conta está cadastrada com um usuário do LinkedId"
+
+msgid "Your new account password"
+msgstr "Sua nova senha"
+
+msgid "The system can not change your password, please try later or contact the run.codes support"
+msgstr "O sistema não pode mudar sua senha, por favor tente novamente ou contate support@run.codes"
+
+msgid "The system can not send your password, please try later or contact the run.codes support"
+msgstr "O sistema não pode enviar sua senha, por favor tente novamente ou contate support@run.codes"
+
+msgid "Wrong Answer"
+msgstr "Resposta Incorreta"
+
+msgid "Correct Answer"
+msgstr "Resposta Correta"
+
+msgid "Time Limit Exceeded"
+msgstr "Tempo de Execução Excedido"
+
+msgid "Your main function returns a number different from zero"
+msgstr "Sua função principal retorna um número diferente de zero"
+
+msgid "sec"
+msgstr "s"
+
+msgid "but your main function returns a number different from zero"
+msgstr "mas a função principal retorna um número diferente de zero"
+
+msgid "The exercises will be recompiled soon"
+msgstr "Todos os exercícios serão recompilados"
+
+msgid "Segmentation Fault"
+msgstr "Falha de Segmentação"
+
+msgid "Aborted"
+msgstr "Processo Abortado"
+
+msgid "File Size Exceeded"
+msgstr "Tamanho da Saída Excedido"
+
+msgid "Plagiarism"
+msgstr "Plágio"
+
+msgid "Your commit was analyzed as plagiarism"
+msgstr "Sua entrega foi analisada como plágio"
+
+msgid "Submitted"
+msgstr "Submetida"
+
+msgid "View as"
+msgstr "Navegar como"
+
+msgid "The user %s was removed from this offering"
+msgstr "O usuário %s foi removido desta turma"
+
+msgid "Assistant Professor"
+msgstr "Monitor"
+
+msgid "The following similarity comparison result was generated at %s, if this exercise has received any new commit, please update it"
+msgstr "O seguinte resultado de comparação de similaridade foi gerado em %s, se o exercício recebeu alguma nova entrega posteriormente, por favor atualize ele"
+
+msgid "Update Now"
+msgstr "Atualizar Agora"
+
+msgid "Attention"
+msgstr "Atenção"
+
+msgid "Floating Point Error"
+msgstr "Erro de Ponto Flutuante"
+
+msgid "Copy to Clipboard"
+msgstr "Copiar"
+
+msgid "Copied"
+msgstr "Copiado"
+
+msgid "View Error Output"
+msgstr "Ver Saída de Erro"
+
+msgid "This commit have not presented any error message"
+msgstr "Este envio não apresentou nenhuma mensagem de erro para este caso"
+
+msgid "This commit error output is so big that can not be visualized in browser"
+msgstr "O erro produzido neste envio é muito grande para ser visualizado em um navegador"
+
+msgid "User Output Error"
+msgstr "Erro ocorrido na correção"
+
+msgid "Commits in Queue"
+msgstr "Entregas em Fila"
+
+msgid "Commits in Execution"
+msgstr "Entregas em Execução"
+
+msgid "On-line Users"
+msgstr "Usuários On-line"
+
+msgid "Show Admin"
+msgstr "Mostrar Admin"
+
+msgid "Hide Admin"
+msgstr "Esconder Admin"
+
+msgid "Maintenance Mode"
+msgstr "Modo de Manutenção"
+
+msgid "ON"
+msgstr "LIGADO"
+
+msgid "OFF"
+msgstr "DESLIGADO"
+
+msgid "The system is in maintenance mode and closed for non-admin users"
+msgstr "O sistema esta em manutenção e fechado para usuários não admins"
+
+msgid "The system is open for users"
+msgstr "O sistema esta aberto para todos os usuários"
+
+msgid "Database"
+msgstr "Banco de Dados"
+
+msgid "The system is in production mode"
+msgstr "O sistema esta em modo de produção"
+
+msgid "The system is in debug mode"
+msgstr "O sistema esta em modo de debug/testes"
+
+msgid "Today"
+msgstr "Hoje"
+
+msgid "Yesterday"
+msgstr "Ontem"
+
+msgid "Last 7 days"
+msgstr "Últimos 7 dias"
+
+msgid "Avg. Time on Site"
+msgstr "Tempo Médio no Site"
+
+msgid "View Past Offerings"
+msgstr "Ver Turmas Antigas"
+
+msgid "Enrollment Code"
+msgstr "Código de Matrícula"
+
+msgid "If you do not know the enrollment code for your classroom, contact your professor"
+msgstr "Se você não sabe o código de matrícula da sua turma, contate o seu professor"
+
+msgid "Past Offerings"
+msgstr "Turmas Antigas"
+
+msgid "Attention"
+msgstr "Atenção"
+
+msgid "Due the new enrollment system, you need to inform the students about your classroom enrollment code, without that the students can not access and enroll into this course. The enrollment code for this classroom is"
+msgstr "Devido ao novo sistema de matrículas, você precisa informar os estudantes sobre o código de matrícula desta turma, sem este código os estudantes não poderão acessar e se matrícular a este curso. O código de matrícula desta turma é"
+
+msgid "Send E-mail"
+msgstr "Enviar E-mail"
+
+msgid "Statistics"
+msgstr "Estatísticas"
+
+msgid "Active until"
+msgstr "Ativa até"
+
+msgid "Professors and Assistants"
+msgstr "Professores/Monitores"
+
+msgid "Participants Management"
+msgstr "Gerenciamento dos Participantes"
+
+msgid "Select a student"
+msgstr "Selecione um aluno"
+
+msgid "Select a student..."
+msgstr "Selecione um aluno..."
+
+msgid "Classroom Avg."
+msgstr "Média da Turma"
+
+msgid "Grades >= 5.0 Percentage"
+msgstr "Porcentagem Notas >= 5.0"
+
+msgid "Global Grades Average"
+msgstr "Média Global de Notas"
+
+msgid "Send Message"
+msgstr "Enviar Mensagem"
+
+msgid "All participants enrolled at this classroom will receive this message"
+msgstr "Todos os participantes matriculados nesta turma receberão esta mensagem"
+
+msgid "Grades"
+msgstr "Notas"
+
+msgid "Show not delivered exercises as"
+msgstr "Exibir exercícios não entregues como"
+
+msgid "New Case"
+msgstr "Novo Caso de Teste"
+
+msgid "You can submit a file until"
+msgstr "Você pode submeter um arquivo até"
+
+msgid "Exercise Grades Average"
+msgstr "Nota Média"
+
+msgid "Undo"
+msgstr "Desfazer"
+
+msgid "Assessment"
+msgstr "Correção"
+
+msgid "You can attach any file to your compilation process, for example, a code file with the main function. All files listed above will be copied to the folder of the source code of each submission at the time of compilation"
+msgstr "Você pode anexar qualquer arquivo ao processo de compilação, por exemplo, um código com a função main. Todos os arquivos anexados serão copiados para a mesma pasta do código de cada submissão no momento da compilação"
+
+msgid "File in disk"
+msgstr "Arquivo em Disco"
+
+msgid "After the end date, the classroom will be finished."
+msgstr "Após a data de disponibilidade, esta turma será encerrada."
+
+msgid "We recommend you to set an end date after all classes and exams."
+msgstr "Nós recomendamos que você escolha um data após todas as aulas e exames possíveis (incluindo os de recuperação)."
+
+msgid "Or even just before the beginning of the next term"
+msgstr "Ou mesmo escolha uma data apenas antes do início do próximo período letivo"
+
+msgid "Wait. Your last commit is being processed. (You do not need to refresh this page)"
+msgstr "Aguarde. Sua última entrega esta sendo processada. (Você não precisa atualizar esta página)"
+
+msgid "Commits History"
+msgstr "Histórico de Entregas"
+
+msgid "View File"
+msgstr "Ver Arquivo"
+
+msgid "File"
+msgstr "Arquivo"
+
+msgid "Your offering was created"
+msgstr "Sua turma foi criada"
+
+msgid "Sorry! The run.codes is down for maintenance tasks"
+msgstr "Desculpe! O sistema run.codes está offline no momento para a realização de procedimentos de manutenção"
+
+msgid "The selected classroom does not belong to your university"
+msgstr "O curso selecionado não pertence a sua universidade"
+
+msgid "Your enrollment code is not valid"
+msgstr "Seu código de matrícula é inválido"
+
+msgid "You was enrolled in that classroom with success"
+msgstr "Você foi matriculado nesta turma com sucesso"
+
+msgid "We could not process your enroll. Please, try again."
+msgstr "Sua matrícula não pode ser realizada. Por favor, tente novamente."
+
+msgid "The user %s was not removed from this offering"
+msgstr "O usuário %s não pode ser removido desta turma"
+
+msgid "The exercise cases %s have been loaded and saved"
+msgstr "Os casos de teste %s foram carregados e salvos com sucesso"
+
+msgid "Exercise case deleted and files removed"
+msgstr "O caso de teste foi excluído de seus arquivos foram apagados"
+
+msgid "The uploaded file have a filetype not allowed to this exercise"
+msgstr "O formato do arquivo enviado não é aceito neste exercício"
+
+msgid "The message has been sent"
+msgstr "Sua mensagem foi enviada com sucesso"
+
+msgid "The message has not been sent"
+msgstr "Ocorreu um erro e a mensagem não pode ser enviada"
+
+msgid "You are already enrolled in that offering"
+msgstr "Você já esta matriculado nesta turma"
+
+msgid "Assistant"
+msgstr "Monitor"
+
+msgid "Case Corrects Percentage"
+msgstr "% de Corretos por Caso"
+
+msgid "Select an exercise case"
+msgstr "Selecione um caso de teste"
+
+msgid "Diff between the user output and the correct output"
+msgstr "Diff entre a saída do usuário e a saída esperada"
+
+msgid "Output Error"
+msgstr "Saída de Erro"
+
+msgid "The input is not available for this case"
+msgstr "A entrada deste caso de teste não esta disponível"
+
+msgid "The expected output is not available for this case"
+msgstr "A saída esperada deste caso de teste não esta disponível"
+
+msgid "The user output is not available for this case"
+msgstr "A saída da entrega deste caso de teste não esta disponível"
+
+msgid "The exercise is closed"
+msgstr "O exercício está fechado"
+
+msgid "Back to Home"
+msgstr "Voltar a Home"
+
+msgid "Are you sure you want to delete %s?"
+msgstr "Você realmente quer excluir o registro %s?"
+
+msgid "Are you sure you want to remove the participant %s?"
+msgstr "Você realmente quer remover o participante $s?"
+
+msgid "Cases Details"
+msgstr "Detalhes dos Casos de Teste"
+
+msgid "Refresh this page to see the details of each case correction"
+msgstr "Atualize esta página para ver mais detalhes sobre a correção de cada caso de teste"
+
+msgid "Select the allowed languages"
+msgstr "Selecione as linguagens aceitas"
+
+msgid "You do not have any closed offering"
+msgstr "Você não tem turmas encerradas"
+
+msgid "You have not confirmed your registration by email"
+msgstr "Você não confirmou o seu email"
+
+msgid "In R exercises you must upload your input using a file in the upload area above"
+msgstr "Nos exercícios da linguagem R você deve enviar a entrada do exercício através de um arquivo, na área de upload abaixo"
+
+msgid "Sorry"
+msgstr "Desculpe"
+
+msgid "Add exercise cases in batch is not possible in R Statistical Software exercises"
+msgstr "Adicionar casos de teste em lote não é permitido em exercícios com o R Statistical Software"
+
+msgid "Resend Confirmation Email"
+msgstr "Reenviar Email de Confirmação"
+
+msgid "Confirm Register"
+msgstr "Confirmar Cadastro"
+
+msgid "Enrollments"
+msgstr "Matrículas"
+
+msgid "Lat Commits"
+msgstr "Últimos Envios"
+
+msgid "User"
+msgstr "Usuário"
+
+msgid "Time"
+msgstr "Horário"
+
+msgid "Add exercise cases is not possible in Simple File Exercises"
+msgstr "Adicionar casos de teste não é possível em exercícios simples (sem correção automática)"
+
+msgid "Add exercise cases in batch is not possible in Simple File Exercises"
+msgstr "Adicionar casos de teste em lote não é possível em exercícios simples (sem correção automática)"
+
+msgid "You must inform a numeric Student ID"
+msgstr "Você deve informar um identificador de aluno numérico"
+
+msgid "Are you sure you want to delete all cases?"
+msgstr "Você tem certeza de que deseja remover todos os casos?"
+
+msgid "Remove All Cases"
+msgstr "Remover Todos os Casos de Teste"
+
+msgid "Exercise Cases was not deleted"
+msgstr "Os casos de teste não foram removidos"
+
+msgid "Exercise Cases deleted"
+msgstr "Os casos de teste foram removidos"
+
+msgid "There are commits processed before your last cases changes. It strongly recommends that you recompile all commits"
+msgstr "Existem entregas que foram processadas antes da sua última alteração nos casos de teste. É altamente recomendável que você recompile todas estas entregas"
+
+msgid "Your Student ID should be numeric"
+msgstr "O seu número de identificação deve ser numérico"
+
+msgid "You have been removed for that offering"
+msgstr "Você foi excluído dessa disciplina"
+
+msgid "The user has been banned form this offering"
+msgstr "O usuário foi removido desta turma"
+
+msgid "Exercise Case Files in Batch"
+msgstr "Arquivos dos Casos de Teste"
+
+msgid "Share Exercise"
+msgstr "Compartilhar Exercício"
+
+msgid "Import Exercise"
+msgstr "Importar Exercício"
+
+msgid "Share exercise allow you to have this exercise in more than one active classroom. All classrooms will have the same exercise, including de deadline, allowed files and test cases. Any change in any exercise configuration will be propagated to all classrooms it is shared"
+msgstr "Compartilhar o exercício permite que este seja aplicado a mais de uma turma sem a necessidade de múltiplos cadastros. O exercício será idêntico em todas as turmas que tiverem esse exercício compartilhado, incluíndo o prazo de entrega, arquivos permitidos e casos de teste. Qualquer mudança realizada será propagada para todas as turmas em que este está compartilhado"
+
+msgid "This exercise is being shared among the following classrooms"
+msgstr "Este exercício está sendo compartilhado entre as seguintes turmas"
+
+msgid "We will process your similarity as soon as possible, but this process may take some time. Click in the button below to request the process and we will send you an email when it is done."
+msgstr "Nós vamos processar seu teste de similaridade assim que possível, porém o teste pode levar um certo tempo. Clique no botão abaixo para requisitar o processamento e nós vamos te enviar um email quando ele estiver terminado."
+
+msgid "This exercise is in the queue and the similarity will be processed as soon as possible."
+msgstr "Este exercício esta na fila de testes de similaridade e será processado assim que possível."
+
+msgid "Similarity Tests"
+msgstr "Testes de Similaridade"
+
+msgid "Add Exercise to Test"
+msgstr "Adicionar Exercício ao Teste"
+
+msgid "Past Tests"
+msgstr "Verificações Anteriores"
+
+msgid "Waiting"
+msgstr "Em espera"
+
+msgid "Available"
+msgstr "Disponível"
+
+msgid "Unavailable"
+msgstr "Não disponível"
+
+msgid "Verify similarity among different exercises"
+msgstr "Verificar similaridade entre múltiplos exercícios"
+
+msgid "Similarity Result"
+msgstr "Resultado de Similaridade"
+
+msgid "Back"
+msgstr "Voltar"
+
+msgid "Sorry! There is an error with this test, we will verify it"
+msgstr "Desculpe! Existe um erro com este teste, nós vamos verificar isso"
+
+msgid "The similarity test is not available anymore"
+msgstr "Este teste de similaridade não está disponível"
+
+msgid "Please, select at least 1 exercise"
+msgstr "Por favor, selecione pelo menos 1 exercício"
+
+msgid "The similarity test has been scheduled, you will receive an email when it is done"
+msgstr "O teste de similaridade foi agendado, você receberá um email quando o resultado estiver disponível"
+
+msgid "Finished"
+msgstr "Encerrado"
+
+msgid "If you did not found your subject in the list above, please send an email to support@run.codes with your university name, subject code and name. We will add it as soon as possible."
+msgstr "Se você não encontrou sua disciplina na lista envie um e-mail para support@run.codes com a universidade, código e nome que cadastraremos o mais rápido possível."
+
+msgid "This exercise does not allow the compilation of commits"
+msgstr "Este exercício não permite a compilação das entregas"
+
+msgid "Disk Usage"
+msgstr "Uso de Disco"
+
+msgid "Filter"
+msgstr "Filtrar"
+
+msgid "Include finished offerings"
+msgstr "Incluir turmas encerradas"
+
+msgid "End Date"
+msgstr "Data de Término"
+
+msgid "Professors"
+msgstr "Professores"
+
+msgid "All"
+msgstr "Todos"
+
+msgid "Add"
+msgstr "Adicionar"
+
+msgid "Abbreviation"
+msgstr "Abreviação"
+
+msgid "Compilation Finished"
+msgstr "Compilação Realizada"
+
+msgid "Student Identifier Text"
+msgstr "Identificação do Aluno"
+
+msgid "Add University"
+msgstr "Adicionar Universidade"
+
+msgid "User Email"
+msgstr "Email do Usuário"
+
+msgid "%d courses have been saved, %d courses have been registered before, %d courses could not be saved"
+msgstr "%d disciplinas foram cadastradas, %d disciplinas já estavam cadastradas anteriormente, %d disciplinas não puderam ser cadastradas"
+
+msgid "All %d courses have been saved"
+msgstr "Todas as %d disciplinas foram cadastradas"
+
+msgid "Courses in Batch"
+msgstr "Disciplinas em Lote"
+
+msgid "Add in Batch"
+msgstr "Adicione em Lote"
+
+msgid "Add Normal"
+msgstr "Adicione Normalmente"
+
+msgid "Add one course per line in the format [course_code]{espace}[course_name]"
+msgstr "Adicione uma disciplina por linha, no formato [código]{espaço}[nome_da_disciplina]"
+
+msgid "View Description"
+msgstr "Ver Descrição"
+
+msgid "Hide Description"
+msgstr "Esconder Descrição"
+
+msgid "This commit are being processed now"
+msgstr "Esta entrega está sendo processado neste momento"
+
+msgid "Some commits are being processed now, please wait all results to recompile all again"
+msgstr "Algumas entregas estão sendo processadas agora, por favor aguarde para recompilar todos novamente"
+
+msgid "Aborted Externally"
+msgstr "Processo Abortado Externamente"
+
+msgid "Download Test Cases"
+msgstr "Baixar Casos de Teste"
+
+msgid "Basic"
+msgstr "Básico"
+
+msgid "Easy"
+msgstr "Fácil"
+
+msgid "Medium"
+msgstr "Mediano"
+
+msgid "Hard"
+msgstr "Difícil"
+
+msgid "Import"
+msgstr "Importar"
+
+msgid "Copy to Public Database"
+msgstr "Copiar para Base de Dados Pública"
+
+msgid "Import Public Exercise"
+msgstr "Importar Exercício Público"
+
+msgid "Level"
+msgstr "Dificuldade"
+
+msgid "Number of Cases"
+msgstr "Número de Casos de Teste"
+
+msgid "Exercises Public Database"
+msgstr "Lista de Exercícios Públicos"
+
+msgid "Keywords"
+msgstr "Palavras-chave"
+
+msgid "Copy Exercise to Public Database"
+msgstr "Copiar Exercício para Base de Dados Pública"
+
+msgid "Public University"
+msgstr "Universidade Pública"
+
+msgid "Private University"
+msgstr "Universidade Privada"
+
+msgid "High School"
+msgstr "Ensino Médio/Colégio Técnico"
+
+msgid "This exercise has too many cases, there is not possible to build this report"
+msgstr "Este exercício possui muitos casos de teste, impossibilitando a produção deste relatório"
+
+msgid "Your user is a professor now"
+msgstr "Seu usuário agora é um professor"
+
+msgid "This user does not have the professor role"
+msgstr "Este usuário não possui conta de professor"
+
+msgid "The user has received an email confirm the role change"
+msgstr "O usuário recebeu o email de confirmação da modificação de status"
+
+msgid "E-mail not sent"
+msgstr "E-mail não enviado"
+
+msgid "Registered since"
+msgstr "Registrado desde"
+
+msgid "Send role confirmation email"
+msgstr "Enviar e-mail de confirmação de status"
+
+msgid "Add User"
+msgstr "Adicionar Usuário"
+
+msgid "Institution Type"
+msgstr "Tipo de Instituição de Ensino"
+
+msgid "Institution"
+msgstr "Instituição de Ensino"
+
+msgid "Sorry! This action is not allowed in demo mode"
+msgstr "Desculpe! Esta ação não é permitida para ser executada pela conta de demonstração"
+
+msgid "Edit University"
+msgstr "Editar Universidade"
+
+msgid "Reserved run.codes"
+msgstr "Reservado run.codes"
+
+msgid "Welcome to run.codes! Using a demo account you can see how run.codes works. However, some action has been disabled for security reasons. If you want complete access, please create an account"
+msgstr "Bem-vindo ao run.codes! Utilizando uma conta de demonstração você pode ver como o run.codes funciona. Entretanto, algumas ações foram desabilitadas por segurança. Se você deseja acesso completo, por favor crie uma conta"
+
+msgid "All messages older than 3 days have been cleared"
+msgstr "Todas as mensagens enviadas a mais de 3 dias foram limpas"
+
+msgid "No messages found to be cleared"
+msgstr "Não foram encontradas mensagens para serem limpas"
+
+msgid "Sent to"
+msgstr "Enviado para"
+
+msgid "First Time Opened"
+msgstr "Primeira Leitura"
+
+msgid "Opened"
+msgstr "Aberto"
+
+msgid "Message Subject"
+msgstr "Assunto da Mensagem"
+
+msgid "Clean Old Messages"
+msgstr "Limpar Mensagens Antigas"
+
+msgid "Mail Logs"
+msgstr "Log de E-mails"
+
+msgid "Change All"
+msgstr "Modificar Todos"
+msgid "File size bigger than maximum size allowed (%s Kb)"
+msgstr "Tamanho do arquivo maior que o máximo permitido (%s Kb)"
+
+msgid "All cases input visibility have been updated"
+msgstr "A visibilidade da entrada de todos os casos de teste foi alterada"
+msgid "The exercise case file could not be saved"
+msgstr "O arquivo de um caso de teste não pode ser salvo"
+
+msgid "All cases expected output visibility have been updated"
+msgstr "A visibilidade da saída esperada de todos os casos de teste foi alterada"
+msgid "Sorry! We could not generate the zip file now. Please try again!"
+msgstr "Desculpe! Não foi possível criar o arquivo zip no momento. Por favor, tente novamente!"
+
+msgid "All cases user output visibility have been updated"
+msgstr "A visibilidade da saída do aluno de todos os casos de teste foi alterada"
+
+msgid "Multiple Exercise Tests"
+msgstr "Testes com Múltiplos Exercícios"
+
+msgid "View Result"
+msgstr "Ver Resultado"
+
+msgid "Requested by"
+msgstr "Requerido por"
+
+msgid "Last Update"
+msgstr "Última Atualização"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Exercise Id"
+msgstr "ID do Exercício"
+
+msgid "Multiple Exercise Tests Executed"
+msgstr "Testes com Múltiplos Exercícios Executados"
+
+msgid "New Test"
+msgstr "Novo Teste"
+
+msgid "(Optional) You will receive the email it this field is empty"
+msgstr "(Opcional) Você receberá o email caso este campo esteja em branco"
+
+msgid "The similarity test has been scheduled"
+msgstr "O teste de similaridade foi agendado"
+
+msgid "The similarity test has been canceled"
+msgstr "O teste de similaridade foi cancelado"
+
+msgid "You cannot request a similarity test if the exercise has less than 2 submissions"
+msgstr "Não é possível realizar o teste de similaridade se o exercício não tem pelo menos duas entregas"
+
+msgid "Your commit could not be analyzed by our engine, please contact support@run.codes"
+msgstr "Sua submissão não pode ser analisada pelo nosso sistema, nós verificaremos isso, mas se o erro persistir contate support@run.codes"
+
+msgid "Bad formatted output"
+msgstr "Saída mal-formatada"
+
+msgid "However, they will not be available at the time of execution"
+msgstr "Entretanto, eles não estarão acessíveis pelo código do aluno na etapa de execução"
+
+msgid "Presentation Error"
+msgstr "Saída mal-formatada"
+
+msgid "Exercise URL: "
+msgstr "URL do exercício: "
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
