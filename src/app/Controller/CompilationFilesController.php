@@ -76,7 +76,6 @@ class CompilationFilesController extends AppController
 
   public function fileUpload()
   {
-    error_reporting(0);
     $this->layout = 'ajax';
     $this->autoRender = false;
     $this->response->type('json');

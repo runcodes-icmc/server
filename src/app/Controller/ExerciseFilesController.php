@@ -78,7 +78,6 @@ class ExerciseFilesController extends AppController
 
   public function fileUpload()
   {
-    error_reporting(0);
     $this->loadModel("Archive");
     $this->layout = 'ajax';
     $this->autoRender = false;
