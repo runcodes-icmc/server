@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+<!--
+<style>
+p {
+  font-size: 24px;
+}
+</style>
+-->
 
 <head>
   <?php echo $this->Html->charset(); ?>
@@ -32,7 +39,7 @@
     <div class="welcome-area-content">
       <?php echo $this->element(Configure::read('Config.language') . DS . "homeRightBar"); ?>
       <?php echo __("By browsing in %s you agree with the", __("run.codes")) . " ";
-      echo $this->Html->link(__("Terms of Use"), '#', array('class' => 'modalTerms terms', 'data-toggle' => 'modal', 'data-target' => '#modalTerms')); ?>
+       echo $this->Html->link(__("Terms of Use"), '#', array('class' => 'modalTerms terms', 'data-toggle' => 'modal', 'data-target' => '#modalTerms')); ?>
     </div>
   </div>
   <div class="login-area">
