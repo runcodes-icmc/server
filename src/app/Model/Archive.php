@@ -554,7 +554,6 @@ class Archive extends AppModel
     } catch (S3Exception $e) {
       $cause = $e->getPrevious();
       if ($cause instanceof ParserException) {
-        CakeLog::warning("Parser exception on copyFilesInAWS (expected): " . $pe);
         return $targetKey;
       }
       CakeLog::error("S3Exception on copyFilesInAWS: " . $e);
