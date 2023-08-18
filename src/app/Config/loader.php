@@ -26,7 +26,7 @@ class ConfigLoader
     'RUNCODES_DB_SCHEMA' => 'public',
     'RUNCODES_REDIS_HOST' => 'redis',
     'RUNCODES_REDIS_PORT' => '6379',
-    'RUNCODES_CONTACT_EMAIL' => 'jbatista@icmc.usp.br',
+    'RUNCODES_CONTACT_EMAIL' => 'nowhere@nowhere',
     'RUNCODES_SECURITY_SALT' => '75581170ffc0cc5ae2d7c2823fe21d6a77bbefb90d141c2765d37ab24f7702dc',
     'RUNCODES_SECURITY_CIPHER_SEED' => '15146846548146846454685',
     'RUNCODES_DOMAIN' => 'https://run.codes',
