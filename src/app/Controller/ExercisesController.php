@@ -12,32 +12,13 @@ App::uses('Folder', 'Utility');
 class ExercisesController extends AppController
 {
 
-  protected $error_messages = array(
-    1 => 'The uploaded file exceeds the upload_max_filesize directive in php.ini',
-    2 => 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form',
-    3 => 'The uploaded file was only partially uploaded',
-    4 => 'No file was uploaded',
-    6 => 'Missing a temporary folder',
-    7 => 'Failed to write file to disk',
-    8 => 'A PHP extension stopped the file upload',
-    'post_max_size' => 'The uploaded file exceeds the post_max_size directive in php.ini',
-    'max_file_size' => 'File is too big',
-    'min_file_size' => 'File is too small',
-    'accept_file_types' => 'Filetype not allowed',
-    'max_number_of_files' => 'Maximum number of files exceeded',
-    'max_width' => 'Image exceeds maximum width',
-    'min_width' => 'Image requires a minimum width',
-    'max_height' => 'Image exceeds maximum height',
-    'min_height' => 'Image requires a minimum height'
-  );
-
   /**
    * Components
    *
    * @var array
    */
   public $components = array('Paginator');
-
+  protected $error_messages = array(1 => 'The uploaded file exceeds the upload_max_filesize directive in php.ini', 2 => 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form', 3 => 'The uploaded file was only partially uploaded', 4 => 'No file was uploaded', 6 => 'Missing a temporary folder', 7 => 'Failed to write file to disk', 8 => 'A PHP extension stopped the file upload', 'post_max_size' => 'The uploaded file exceeds the post_max_size directive in php.ini', 'max_file_size' => 'File is too big', 'min_file_size' => 'File is too small', 'accept_file_types' => 'Filetype not allowed', 'max_number_of_files' => 'Maximum number of files exceeded', 'max_width' => 'Image exceeds maximum width', 'min_width' => 'Image requires a minimum width', 'max_height' => 'Image exceeds maximum height', 'min_height' => 'Image requires a minimum height');
   private $studentAuthorized = array('view', 'commit', 'downloadcases', 'exportexercisetogooglecalendar');
   private $demoPostNotAuthorized = array('add', 'edit', 'view', 'viewprofessor', 'import', 'casestable', 'commit', 'edit', 'delete', 'removeallcases');
   private $professorAuthorized = array('showuseroutput', 'showexpectedoutput', 'showinput', 'import', 'add', 'view', 'viewprofessor', 'casestable', 'commit', 'edit', 'delete', 'getallscoreszipped', 'participantcommits', 'stats', 'removeallcases');
@@ -88,7 +69,7 @@ class ExercisesController extends AppController
       $exercise = $this->Exercise->findById($this->request->params['pass'][0], array('Exercise.offering_id'));
       $offering = $exercise['Exercise']['offering_id'];
       if (isset($this->currentUser['onlyStudent']) && $this->currentUser['onlyStudent']) {
-        $assistantOrProfessor =  false;
+        $assistantOrProfessor = false;
       } else {
         $assistantOrProfessor = ($this->currentUser['type'] >= $this->User->getAdminIndex()) ? true : $this->Enrollment->isEnrolledAsProfessorOrAssistant($this->currentUser['email'], $offering);
       }
@@ -111,13 +92,7 @@ class ExercisesController extends AppController
       if (isset($this->request->data['Exercise']['university_id']) && $this->request->data['Exercise']['university_id'] == -1) {
         $this->request->data['Exercise']['university_id'] = null;
       }
-      $this->redirect(array(
-        'controller' => 'Exercises',
-        'action' => 'index',
-        'university' => $this->request->data['Exercise']['university_id'],
-        'type' => $this->request->data['Exercise']['type'],
-        'title' => $this->request->data['Exercise']['title']
-      ));
+      $this->redirect(array('controller' => 'Exercises', 'action' => 'index', 'university' => $this->request->data['Exercise']['university_id'], 'type' => $this->request->data['Exercise']['type'], 'title' => $this->request->data['Exercise']['title']));
     }
     $cond = array();
 
@@ -213,9 +188,9 @@ class ExercisesController extends AppController
   /**
    * view method
    *
-   * @throws NotFoundException
    * @param string $id
    * @return void
+   * @throws NotFoundException
    */
   public function view($id = null)
   {
@@ -228,7 +203,7 @@ class ExercisesController extends AppController
     $exercise = $this->Exercise->findById($this->request->params['pass'][0], array('Exercise.offering_id'));
     $offering = $exercise['Exercise']['offering_id'];
     if (isset($this->currentUser['onlyStudent']) && $this->currentUser['onlyStudent']) {
-      $assistantOrProfessor =  false;
+      $assistantOrProfessor = false;
     } else {
       $assistantOrProfessor = ($this->currentUser['type'] >= $this->User->getAdminIndex()) ? true : $this->Enrollment->isEnrolledAsProfessorOrAssistant($this->currentUser['email'], $offering);
     }
@@ -612,12 +587,6 @@ class ExercisesController extends AppController
     $this->error_messages['accept_file_types'] = __('The uploaded file have a filetype not allowed to this exercise');
   }
 
-  public function copy($exercise_id)
-  {
-    $this->Exercise->copy($exercise_id, 37, '2015-07-17 00:00:00', '2015-08-17 23:00:00', 'fabio.sikansi@gmail.com', true);
-    die();
-  }
-
   public function ghost($exercise_id)
   {
     debug($this->Exercise->createGhostExercise($exercise_id, 37, $this->currentUser['email']));
@@ -728,10 +697,8 @@ class ExercisesController extends AppController
         $this->Session->setFlash(__('The exercise could not be saved. Please, try again.'));
       }
     }
-    if (isset($this->request->data['Exercise']['deadline']))
-      $this->request->data['Exercise']['deadline'] = DateTime::createFromFormat('Y-m-d H:i:s', $this->request->data['Exercise']['deadline'])->format('d/m/Y H:i:s');
-    if (isset($this->request->data['Exercise']['open_date']))
-      $this->request->data['Exercise']['open_date'] = DateTime::createFromFormat('Y-m-d H:i:s', $this->request->data['Exercise']['open_date'])->format('d/m/Y H:i:s');
+    if (isset($this->request->data['Exercise']['deadline'])) $this->request->data['Exercise']['deadline'] = DateTime::createFromFormat('Y-m-d H:i:s', $this->request->data['Exercise']['deadline'])->format('d/m/Y H:i:s');
+    if (isset($this->request->data['Exercise']['open_date'])) $this->request->data['Exercise']['open_date'] = DateTime::createFromFormat('Y-m-d H:i:s', $this->request->data['Exercise']['open_date'])->format('d/m/Y H:i:s');
 
     $offering = $this->Offering->find('first', array('conditions' => array('Offering.id' => $id_offering)));
     $allowedTypes = $this->AllowedFile->find('list');
@@ -745,7 +712,7 @@ class ExercisesController extends AppController
     foreach ($others_offerings as $koo => $oo) {
       $course = $this->Course->findById($oo['Offering']['course_id'], array('name'));
       $others_offerings[$koo]['Course'] = $course['Course'];
-      $others_offerings_list[$oo['Enrollment']['offering_id']] =  $course['Course']['name'] . " (" . $oo['Offering']['classroom'] . ")";
+      $others_offerings_list[$oo['Enrollment']['offering_id']] = $course['Course']['name'] . " (" . $oo['Offering']['classroom'] . ")";
     }
     //---------------------------------------------
     if (isset($this->request->params["named"]["markdown"])) {
@@ -839,6 +806,12 @@ class ExercisesController extends AppController
     array_push($breadcrumbs, array('link' => '#', 'text' => __("Import Exercise")));
     $types = $this->Exercise->getTypesList();
     $this->set(compact('offering', 'allowedTypes', 'breadcrumbs', 'types', 'others_offerings_list', 'publicExercise'));
+  }
+
+  public function copy($exercise_id)
+  {
+    $this->Exercise->copy($exercise_id, 37, '2015-07-17 00:00:00', '2015-08-17 23:00:00', 'fabio.sikansi@gmail.com', true);
+    die();
   }
 
   public function edit($id = null)
@@ -1012,9 +985,9 @@ class ExercisesController extends AppController
       $course = $this->Course->findById($oo['Offering']['course_id'], array('name'));
       $others_offerings[$koo]['Course'] = $course['Course'];
       if (in_array(intval($oo['Enrollment']['offering_id']), $ghost_exercises)) {
-        $others_offerings_ghost[$oo['Enrollment']['offering_id']] =  $course['Course']['name'] . " (" . $oo['Offering']['classroom'] . ")";
+        $others_offerings_ghost[$oo['Enrollment']['offering_id']] = $course['Course']['name'] . " (" . $oo['Offering']['classroom'] . ")";
       } else {
-        $others_offerings_list[$oo['Enrollment']['offering_id']] =  $course['Course']['name'] . " (" . $oo['Offering']['classroom'] . ")";
+        $others_offerings_list[$oo['Enrollment']['offering_id']] = $course['Course']['name'] . " (" . $oo['Offering']['classroom'] . ")";
       }
     }
     //---------------------------------------------
@@ -1038,35 +1011,6 @@ class ExercisesController extends AppController
     $this->set(compact('offering', 'allowedTypes', 'breadcrumbs', 'types', 'others_offerings_ghost', 'others_offerings_list'));
     $this->set('isEdit', true);
     $this->render("form");
-  }
-
-  /**
-   * delete method
-   *
-   * @throws NotFoundException
-   * @param string $id
-   * @return void
-   */
-  public function delete($id = null)
-  {
-    $this->Exercise->id = $id;
-    if (!$this->Exercise->exists()) {
-      throw new NotFoundException(__('Invalid exercise'));
-    }
-    $this->request->onlyAllow('post', 'delete');
-    $exercise = $this->Exercise->findById($id);
-    if ($exercise['Exercise']['ghost']) {
-      $this->Exercise->id = $exercise['Exercise']['real_id'];
-      $id = $exercise['Exercise']['real_id'];
-    }
-    if ($this->Exercise->saveField('removed', true)) {
-      $this->Exercise->updateAll(array('removed' => true), array('real_id' => $id));
-      Log::register("Removed the Exercise #" . $id, $this->currentUser);
-      $this->Session->setFlash(__('Exercise deleted'), 'default', array(), 'success');
-      $this->redirect(array('controller' => 'Offerings', 'action' => 'view', $exercise['Exercise']['offering_id']));
-    }
-    $this->Session->setFlash(__('Exercise was not deleted'));
-    $this->redirect(array('controller' => 'Offerings', 'action' => 'view', $exercise['Exercise']['offering_id']));
   }
 
   public function restore($id = null)
@@ -1121,6 +1065,35 @@ class ExercisesController extends AppController
     return $this->redirect(array('controller' => 'Exercises', 'action' => 'viewProfessor', $id));
   }
 
+  /**
+   * delete method
+   *
+   * @param string $id
+   * @return void
+   * @throws NotFoundException
+   */
+  public function delete($id = null)
+  {
+    $this->Exercise->id = $id;
+    if (!$this->Exercise->exists()) {
+      throw new NotFoundException(__('Invalid exercise'));
+    }
+    $this->request->onlyAllow('post', 'delete');
+    $exercise = $this->Exercise->findById($id);
+    if ($exercise['Exercise']['ghost']) {
+      $this->Exercise->id = $exercise['Exercise']['real_id'];
+      $id = $exercise['Exercise']['real_id'];
+    }
+    if ($this->Exercise->saveField('removed', true)) {
+      $this->Exercise->updateAll(array('removed' => true), array('real_id' => $id));
+      Log::register("Removed the Exercise #" . $id, $this->currentUser);
+      $this->Session->setFlash(__('Exercise deleted'), 'default', array(), 'success');
+      $this->redirect(array('controller' => 'Offerings', 'action' => 'view', $exercise['Exercise']['offering_id']));
+    }
+    $this->Session->setFlash(__('Exercise was not deleted'));
+    $this->redirect(array('controller' => 'Offerings', 'action' => 'view', $exercise['Exercise']['offering_id']));
+  }
+
   public function getAllScoresZipped($id = null)
   {
     $this->Exercise->id = $id;
@@ -1128,15 +1101,17 @@ class ExercisesController extends AppController
     if (!$this->Exercise->exists()) {
       throw new NotFoundException(__('Invalid exercise'));
     }
+
     $zipfile = tempnam("tmp", "zip");
     $zip = new ZipArchive();
     if ($zip->open($zipfile, ZIPARCHIVE::OVERWRITE) !== TRUE) {
       throw new NotFoundException(__('Invalid exercise'));
     }
+
     $exercise = $this->Exercise->findById($id);
-    $info = "Zip file generated at: " . date('d/m/Y H:i:s') . " \nThis zip file contains the last submitted file for each student so far \nExercise: " . $exercise['Exercise']['title'];
     $info = "Arquivo zip gerado em: " . date('d/m/Y H:i:s') . " \nEste arquivo contem a última submissão de cada aluno até o momento.  \nExercício: " . $exercise['Exercise']['title'];
     $filename = $this->_removeAccents($exercise['Exercise']['title']) . ".zip";
+
     $zip->addFromString('README.txt', $info);
 
     $this->loadModel('Commit');
@@ -1146,7 +1121,13 @@ class ExercisesController extends AppController
     $this->Commit->recursive = -1;
     $this->Offering->recursive = -1;
     $this->User->recursive = -1;
-    $scores = $this->Commit->find('all', array('fields' => array('id', 'user_email', 'commit_time', 'hash', 'aws_key'), 'conditions' => array('Commit.exercise_id' => $id, " Commit.commit_time = (SELECT MAX(commit_time) FROM commits c2 WHERE Commit.user_email = c2.user_email AND Commit.exercise_id=c2.exercise_id GROUP BY user_email, exercise_id)"), 'order' => 'score DESC, commit_time ASC'));
+
+    $scores = $this->Commit->find('all', array(
+      'fields' => array('id', 'user_email', 'commit_time', 'hash', 'aws_key'),
+      'conditions' => array('Commit.exercise_id' => $id,
+      " Commit.commit_time = (SELECT MAX(commit_time) FROM commits c2 WHERE Commit.user_email = c2.user_email AND Commit.exercise_id=c2.exercise_id GROUP BY user_email, exercise_id)"),
+      'order' => 'score DESC, commit_time ASC')
+    );
 
     //        $offering = $this->Offering->findById($exercise['Exercise']['offering_id']);
     $requestHash = md5($info);
@@ -1159,28 +1140,8 @@ class ExercisesController extends AppController
       $tmpFile = $tmpDir . md5($commit['Commit']['id'] . $commit['Commit']['commit_time']) . $commit['Commit']['hash'] . "." . $ext;
       $this->Archive->getCommitFileSavedFromAwsS3($commit['Commit']['aws_key'], $tmpFile);
       if (file_exists($tmpFile)) {
-        $zip->addFile(
-          $tmpFile,
-          $user['User']['identifier'] . '-' . $this->_removeAccents($user['User']['name']) . '/' . $user['User']['identifier'] . '-' . $this->_removeAccents($user['User']['name']) . '.' . $ext
-        );
+        $zip->addFile($tmpFile, $user['User']['identifier'] . '-' . $this->_removeAccents($user['User']['name']) . '/' . $user['User']['identifier'] . '-' . $this->_removeAccents($user['User']['name']) . '.' . $ext);
       }
-      //            $dir = new Folder(Configure::read('Upload.dir').'/'.$offering['Offering']['course_id'].'/'.$exercise['Exercise']['offering_id'].'/'.$exercise['Exercise']['id'].'/'.$commit['Commit']['user_email'].'/'.$commit['Commit']['commit_time'].'/',false,0777);
-      //            $dirname = Configure::read('Upload.dir').'/'.$offering['Offering']['course_id'].'/'.$exercise['Exercise']['offering_id'].'/'.$exercise['Exercise']['id'].'/'.$commit['Commit']['user_email'].'/'.$commit['Commit']['commit_time'].'/';
-      //            $files=$dir->find();
-      //            $file = array();
-      //            if(count($files) > 0) {
-      //                $user = $this->User->findByEmail($commit['Commit']['user_email']);
-      //                foreach ($files as $f) {
-      //                    if (file_exists($dirname.$f) && !is_dir($dirname.$f)) {
-      //                        $ext = explode('.', $f);
-      //                        $ext = $ext[count($ext)-1];
-      //                        $zip->addFile(
-      //                            $dirname.$f,
-      //                            $user['User']['identifier'].'-'.$this->_removeAccents($user['User']['name']).'/'.$user['User']['identifier'].'-'.$this->_removeAccents($user['User']['name']).'.'.$ext
-      //                        );
-      //                    }
-      //                }
-      //            }
     }
 
     Log::register("The user has dowloaded all files of Exercise #" . $id, $this->currentUser);
@@ -1220,7 +1181,7 @@ class ExercisesController extends AppController
     $exercise = $this->Exercise->findById($id, array('Exercise.offering_id', 'Exercise.title', 'Exercise.ghost', 'Exercise.real_id'));
     $offering_id = $exercise['Exercise']['offering_id'];
     if (isset($this->currentUser['onlyStudent']) && $this->currentUser['onlyStudent']) {
-      $assistantOrProfessor =  false;
+      $assistantOrProfessor = false;
     } else {
       $assistantOrProfessor = ($this->currentUser['type'] >= $this->User->getAdminIndex()) ? true : $this->Enrollment->isEnrolledAsProfessorOrAssistant($this->currentUser['email'], $offering_id);
     }

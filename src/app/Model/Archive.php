@@ -541,21 +541,35 @@ class Archive extends AppModel
 
   public function copyFilesInAWS($sourceBucket, $sourceKey, $targetBucket, $targetKey)
   {
-    //utilizado quando buckets são diferentes
+    // Refactored to test an hypothesis of error on copyObject due to incompatibilities in the SeaweedFS //
+
+
+    // Original source and target buckets parameters
     $sourceBucket = is_null($sourceBucket) ? Configure::read('AWS.files-bucket-name') : $sourceBucket;
     $targetBucket = is_null($targetBucket) ? Configure::read('AWS.files-bucket-name') : $targetBucket;
+
     try {
-      $result = $this->s3Client->copyObject(array(
+      // Download file to temporary location
+      $tmpFilePath = tempnam(sys_get_temp_dir(), 's3_temp');
+      $this->s3Client->getObject([
+        'Bucket' => $sourceBucket,
+        'Key'    => $sourceKey,
+        'SaveAs' => $tmpFilePath
+      ]);
+
+      // Upload downloaded file to target bucket
+      $result = $this->s3Client->putObject([
         'Bucket' => $targetBucket,
         'Key'    => $targetKey,
-        'CopySource' => $sourceBucket . DS . $sourceKey,
-      ));
+        'SourceFile' => $tmpFilePath
+      ]);
+
+      // Cleanup
+      unlink($tmpFilePath);
+
+      // Return target key (whis is kinda weird, but ok)
       return $targetKey;
     } catch (S3Exception $e) {
-      $cause = $e->getPrevious();
-      if ($cause instanceof ParserException) {
-        return $targetKey;
-      }
       CakeLog::error("S3Exception on copyFilesInAWS: " . $e);
     } catch (Exception $e) {
       CakeLog::error("Exception on copyFilesInAWS: " . $e);

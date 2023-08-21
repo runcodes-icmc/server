@@ -5,12 +5,10 @@ services:
   app:
     build: .
     restart: unless-stopped
-    ports:
-      - "9000:9000"
     networks:
       - runcodes-net
     environment:
-      RUNCODES_S3_PUBLIC_ENDPOINT: 127.0.0.1
+      RUNCODES_S3_PUBLIC_ENDPOINT: http://localhost:8333
 
   # PostgreSQL Database
   database:
@@ -18,8 +16,6 @@ services:
     restart: unless-stopped
     environment:
       - POSTGRES_PASSWORD=secret_password
-    ports:
-      - "5432:5432"
     volumes:
       - runcodes-db-vol:/var/lib/postgresql/data
     networks:
@@ -50,8 +46,6 @@ services:
   redis:
     image: redis:7-alpine
     restart: unless-stopped
-    ports:
-      - "6379:6379"
     volumes:
       - runcodes-redis-vol:/data
     networks:
@@ -63,9 +57,9 @@ services:
 
   seaweed:
     image: chrislusf/seaweedfs
+    command: server -s3 -volume.max=50 -dir="/data" -master.volumeSizeLimitMB=256 -ip=seaweed -ip.bind=0.0.0.0
     ports:
       - 8333:8333
-    command: server -s3 -volume.max=50 -dir="/data" -master.volumeSizeLimitMB=256 -ip=seaweed -ip.bind=0.0.0.0
     volumes:
       - runcodes-seaweed-vol:/data
     networks:
