@@ -65,9 +65,7 @@ class ExerciseCasesController extends AppController
 
     $options = array('recursive' => -1, 'fields' => 'input, input_type,input_md5', 'conditions' => array('ExerciseCase.' . $this->ExerciseCase->primaryKey => $id));
     $exerciseCase = $this->ExerciseCase->find('first', $options);
-    if (strlen($exerciseCase['ExerciseCase']['input_md5']) > 0) {
-      $exerciseCase['ExerciseCase']['input'] = $this->Archive->getExerciseCaseInputFromAwsS3($id);
-    }
+    $exerciseCase['ExerciseCase']['input'] = $this->Archive->getExerciseCaseInputFromAwsS3($id);
     $memoryEnd = memory_get_usage();
     $memoryUsage = $memoryEnd - $memoryStart;
     if ($memoryUsage > 1000000) {
@@ -87,9 +85,7 @@ class ExerciseCasesController extends AppController
 
     $options = array('recursive' => -1, 'fields' => 'output, output_type,abs_error,output_md5', 'conditions' => array('ExerciseCase.' . $this->ExerciseCase->primaryKey => $id));
     $exerciseCase = $this->ExerciseCase->find('first', $options);
-    if (strlen($exerciseCase['ExerciseCase']['output_md5']) > 0) {
-      $exerciseCase['ExerciseCase']['output'] = $this->Archive->getExerciseCaseOutputFromAwsS3($id);
-    }
+    $exerciseCase['ExerciseCase']['output'] = $this->Archive->getExerciseCaseOutputFromAwsS3($id);
     $memoryEnd = memory_get_usage();
     $memoryUsage = $memoryEnd - $memoryStart;
     if ($memoryUsage > 1000000) {
@@ -422,10 +418,8 @@ class ExerciseCasesController extends AppController
       $inputContent = false;
       $outputContent = false;
 
-      if (md5($this->request->data['ExerciseCase']['input']) !== $this->Archive->getExerciseCaseInputMD5FromAwsS3($id)) {
-        $this->request->data['ExerciseCase']['input_md5'] = md5($this->request->data['ExerciseCase']['input']);
-        $inputContent = $this->request->data['ExerciseCase']['input'];
-      }
+      $this->request->data['ExerciseCase']['input_md5'] = md5($this->request->data['ExerciseCase']['input']);
+      $inputContent = $this->request->data['ExerciseCase']['input'];
 
       if (md5($this->request->data['ExerciseCase']['output']) !== $this->Archive->getExerciseCaseOutputMD5FromAwsS3($id)) {
         $this->request->data['ExerciseCase']['output_md5'] = md5($this->request->data['ExerciseCase']['output']);
@@ -482,12 +476,8 @@ class ExerciseCasesController extends AppController
       $options = array('conditions' => array('ExerciseCase.' . $this->ExerciseCase->primaryKey => $id));
       $exerciseCase = $this->ExerciseCase->find('first', $options);
 
-      if (strlen($exerciseCase['ExerciseCase']['input_md5']) > 0) {
-        $exerciseCase['ExerciseCase']['input'] = $this->Archive->getExerciseCaseInputFromAwsS3($id);
-      }
-      if (strlen($exerciseCase['ExerciseCase']['output_md5']) > 0) {
-        $exerciseCase['ExerciseCase']['output'] = $this->Archive->getExerciseCaseOutputFromAwsS3($id);
-      }
+      $exerciseCase['ExerciseCase']['input'] = $this->Archive->getExerciseCaseInputFromAwsS3($id);
+      $exerciseCase['ExerciseCase']['output'] = $this->Archive->getExerciseCaseOutputFromAwsS3($id);
 
       if ($exerciseCase['ExerciseCase']['output_type'] == 1) {
         $exerciseCase['ExerciseCase']['outputText'] = $exerciseCase['ExerciseCase']['output'];

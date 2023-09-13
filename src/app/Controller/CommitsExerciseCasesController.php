@@ -98,27 +98,19 @@ class CommitsExerciseCasesController extends AppController {
             if (!$exerciseCase['ExerciseCase']['show_input']) {
                 $exerciseCase['ExerciseCase']['input'] = __("The input is not available for this case");
             } else {
-                if (strlen($exerciseCase['ExerciseCase']['input_md5']) > 0) {
                     $exerciseCase['ExerciseCase']['input'] = $this->Archive->getExerciseCaseInputFromAwsS3($exerciseCase['ExerciseCase']['id']);
-                }
             }
             if (!$exerciseCase['ExerciseCase']['show_expected_output']) {
                 $exerciseCase['ExerciseCase']['output'] = __("The expected output is not available for this case");
             } else {
-                if (strlen($exerciseCase['ExerciseCase']['output_md5']) > 0) {
                     $exerciseCase['ExerciseCase']['output'] = $this->Archive->getExerciseCaseOutputFromAwsS3($exerciseCase['ExerciseCase']['id']);
-                }
             }
             if (!$exerciseCase['ExerciseCase']['show_user_output']) {
                 $commitsExerciseCase['CommitsExerciseCase']['output'] = __("The user output is not available for this case");
             }
         } else {
-            if (strlen($exerciseCase['ExerciseCase']['input_md5']) > 0) {
                 $exerciseCase['ExerciseCase']['input'] = $this->Archive->getExerciseCaseInputFromAwsS3($exerciseCase['ExerciseCase']['id']);
-            }
-            if (strlen($exerciseCase['ExerciseCase']['output_md5']) > 0) {
                 $exerciseCase['ExerciseCase']['output'] = $this->Archive->getExerciseCaseOutputFromAwsS3($exerciseCase['ExerciseCase']['id']);
-            }
         }
         $this->set('commitsExerciseCase', $commitsExerciseCase);
         $this->set('exerciseCase', $exerciseCase);

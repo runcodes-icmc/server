@@ -12,7 +12,7 @@ spl_autoload_register(array('App', 'load'), true, true);
  * Timezone *
  ************/
 if (!ini_get('date.timezone')) {
-  date_default_timezone_set('America/Sao_Paulo');
+  date_default_timezone_set('UTC');
 }
 
 /*******************

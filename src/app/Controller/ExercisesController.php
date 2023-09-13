@@ -1198,18 +1198,10 @@ class ExercisesController extends AppController
     $countCases = 1;
     foreach ($cases as $case) {
       if ($assistantOrProfessor || $case['ExerciseCase']['show_input']) {
-        if ($case['ExerciseCase']['input_md5'] !== $this->Archive->getExerciseCaseInputMD5FromAwsS3($case['ExerciseCase']['id'])) {
-          $zip->addFromString($countCases . '.in', $case['ExerciseCase']['input']);
-        } else {
           $zip->addFromString($countCases . '.in', $this->Archive->getExerciseCaseInputFromAwsS3($case['ExerciseCase']['id']));
-        }
       }
       if ($assistantOrProfessor || $case['ExerciseCase']['show_expected_output']) {
-        if ($case['ExerciseCase']['output_md5'] !== $this->Archive->getExerciseCaseOutputMD5FromAwsS3($case['ExerciseCase']['id'])) {
-          $zip->addFromString($countCases . '.out', $case['ExerciseCase']['output']);
-        } else {
           $zip->addFromString($countCases . '.out', $this->Archive->getExerciseCaseOutputFromAwsS3($case['ExerciseCase']['id']));
-        }
       }
       $countCases++;
     }

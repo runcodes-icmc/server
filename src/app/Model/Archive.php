@@ -618,7 +618,11 @@ class Archive extends AppModel
     $bucket = is_null($bucket) ? Configure::read('AWS.files-bucket-name') : $bucket;
     $prefix = "s3://" . $bucket;
     $key = $prefix . DS . $key;
-    return file_get_contents($key);
+    $content = file_get_contents($key);
+    if (!$content) {
+      return '';
+    }
+    return $content;
   }
 
   //    public function handleCommitFileUpload ($upload,$prefix,$allowed_types = null,$max_size_limit = 2000000) {
