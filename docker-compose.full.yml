@@ -8,6 +8,7 @@ services:
     networks:
       - runcodes-net
     environment:
+      RUNCODES_DOMAIN: http://localhost:8080
       RUNCODES_S3_PUBLIC_ENDPOINT: http://localhost:8333
 
   # Compiler Engine
