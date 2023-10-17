@@ -8,6 +8,7 @@ services:
     networks:
       - runcodes-net
     environment:
+      TZ: "America/Sao_Paulo"
       RUNCODES_DOMAIN: http://localhost:8080
       RUNCODES_S3_PUBLIC_ENDPOINT: http://localhost:8333
 
@@ -15,6 +16,8 @@ services:
   rcc:
     image: ghcr.io/runcodes-icmc/compiler-engine:latest
     restart: unless-stopped
+    environment:
+      TZ: "America/Sao_Paulo"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /tmp:/tmp
@@ -26,7 +29,8 @@ services:
     image: ghcr.io/runcodes-icmc/database:latest-development
     restart: unless-stopped
     environment:
-      - POSTGRES_PASSWORD=secret_password
+      TZ: "America/Sao_Paulo"
+      POSTGRES_PASSWORD: secret_password
     volumes:
       - runcodes-db-vol:/var/lib/postgresql/data
     networks:

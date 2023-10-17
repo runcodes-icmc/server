@@ -24,6 +24,8 @@ RUN apt-get install -y \
 RUN pecl channel-update pecl.php.net
 RUN pecl install redis-4.3.0
 RUN docker-php-ext-enable redis
+RUN pecl install timezonedb
+RUN docker-php-ext-enable timezonedb
 RUN docker-php-ext-configure zip --with-libzip
 RUN docker-php-ext-install mcrypt pdo pdo_pgsql gd curl intl zip
 
