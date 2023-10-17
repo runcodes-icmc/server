@@ -1,5 +1,5 @@
 body {
-    background: url("../img/login2back.jpg") center center fixed no-repeat;
+    background: url("../img/unfolding4.jpg") center center fixed no-repeat;
     background-size: cover;
     -moz-background-size: cover;
     overflow: hidden;
@@ -16,19 +16,21 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 60%;
+    width: 75%;
     height: auto;
     min-height: 100%;
 }
 
 .welcome-area-content {
-    font-weight: 700;
+    font-weight: 800;
+    color: #FFFFFF;
+    font-size: large;
 }
 
 .login-area {
     position: absolute;
     top: 0%;
-    left: 60%;
+    left: 75%;
     width: 40%;
     height: auto;
     min-height: 100%;
