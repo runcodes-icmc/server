@@ -1,6 +1,7 @@
 <?php
 //debug($exerciseCase);
 ?>
+
 <div id="commitTabs">
     <ul class="nav nav-tabs" id="myTab">
       <li class="active"><a href="#input"><?php echo __("Input"); ?></a></li>
@@ -56,37 +57,58 @@ echo $this->Form->input('user_output',array('label' => false,'type' => 'hidden',
             $(this).tab('show')
         });
 
-        var clientInput = new ZeroClipboard( document.getElementById("btnCopyClipboardInput") );
-        clientInput.on('copy', function(event) {
+        // Copy text from user input field when copy button is clicked
+        var clientInput = document.getElementById("btnCopyClipboardInput");
+        clientInput.addEventListener('click', function(event){
+            
             var text = document.getElementById('inputField').value;
             var windowsText = text.replace(/\n/g, '\r\n');
-            event.clipboardData.setData('text/plain', windowsText);
-            $("#btnCopyClipboardInput").html("<?php echo __("Copied"); ?>!");
-            setInterval(function () {
-                $("#btnCopyClipboardInput").html("<?php echo __("Copy to Clipboard"); ?>");
-            }, 1000);
+            
+            navigator.clipboard.writeText(windowsText).then(function () {
+                $("#btnCopyClipboardInput").html("<?php echo __("Copied"); ?>!");
+                setTimeout(function () {
+                    $("#btnCopyClipboardInput").html("<?php echo __("Copy to Clipboard"); ?>");
+                }, 1000);
+            }).catch(function (err) {
+                console.error('Could not copy text: ', err);
+            });
+
         });
 
-        var clientOutput = new ZeroClipboard( document.getElementById("btnCopyClipboardOutput") );
-        clientOutput.on('copy', function(event) {
+        // Copy text from expected output field when copy button is clicked
+        var clientOutput = document.getElementById("btnCopyClipboardOutput");
+        clientOutput.addEventListener('click', function(event){
+            
             var text = document.getElementById('expectedOutputField').value;
             var windowsText = text.replace(/\n/g, '\r\n');
-            event.clipboardData.setData('text/plain', windowsText);
-            $("#btnCopyClipboardOutput").html("<?php echo __("Copied"); ?>!");
-            setInterval(function () {
-                $("#btnCopyClipboardOutput").html("<?php echo __("Copy to Clipboard"); ?>");
-            }, 1000);
+            
+            navigator.clipboard.writeText(windowsText).then(function () {
+                $("#btnCopyClipboardOutput").html("<?php echo __("Copied"); ?>!");
+                setTimeout(function () {
+                    $("#btnCopyClipboardOutput").html("<?php echo __("Copy to Clipboard"); ?>");
+                }, 1000);
+            }).catch(function (err) {
+                console.error('Could not copy text: ', err);
+            });
+
         });
 
-        var clientUserOutput = new ZeroClipboard( document.getElementById("btnCopyClipboardUserOutput") );
-        clientUserOutput.on('copy', function(event) {
-            var text = document.getElementById('userOutputField').value;
+        // Copy text from user output field when copy button is clicked
+        var clientUserOutput = document.getElementById("btnCopyClipboardUserOutput");
+        clientUserOutput.addEventListener('click', function(event){
+            
+            var text = document.getElementById('expectedOutputField').value;
             var windowsText = text.replace(/\n/g, '\r\n');
-            event.clipboardData.setData('text/plain', windowsText);
-            $("#btnCopyClipboardUserOutput").html("<?php echo __("Copied"); ?>!");
-            setInterval(function () {
-                $("#btnCopyClipboardUserOutput").html("<?php echo __("Copy to Clipboard"); ?>");
-            }, 1000);
+            
+            navigator.clipboard.writeText(windowsText).then(function () {
+                $("#btnCopyClipboardUserOutput").html("<?php echo __("Copied"); ?>!");
+                setTimeout(function () {
+                    $("#btnCopyClipboardUserOutput").html("<?php echo __("Copy to Clipboard"); ?>");
+                }, 1000);
+            }).catch(function (err) {
+                console.error('Could not copy text: ', err);
+            });
+
         });
     })
 </script>
