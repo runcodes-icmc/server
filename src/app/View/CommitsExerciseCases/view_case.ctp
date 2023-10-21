@@ -48,6 +48,26 @@ echo $this->Form->input('user_output',array('label' => false,'type' => 'hidden',
 //echo $this->Html->script('libs/jsdiff');
 ?>
 <script>
+    function copyButtonRoutine(buttonId, copyFieldId){
+        const button = document.getElementById(buttonId);
+
+        button.addEventListener('click', function(event){
+            
+            var text = document.getElementById(copyFieldId).value;
+            var windowsText = text.replace(/\n/g, '\r\n');
+            
+            navigator.clipboard.writeText(windowsText).then(function () {
+                $(`#${buttonId}`).html("<?php echo __("Copied"); ?>!");
+                setTimeout(function () {
+                    $(`#${buttonId}`).html("<?php echo __("Copy to Clipboard"); ?>");
+                }, 1000);
+            }).catch(function (err) {
+                console.error('Could not copy text: ', err);
+            });
+
+        });
+    }
+
     $(function () {
         <?php if (1 == 2 && $exerciseCase['ExerciseCase']['show_expected_output'] && $exerciseCase['ExerciseCase']['show_user_output']): ?>
         $("#outputDiff").html(diffString($("#userOutputField").val(),$("#expectedOutputField").val()));
@@ -58,57 +78,12 @@ echo $this->Form->input('user_output',array('label' => false,'type' => 'hidden',
         });
 
         // Copy text from user input field when copy button is clicked
-        var clientInput = document.getElementById("btnCopyClipboardInput");
-        clientInput.addEventListener('click', function(event){
-            
-            var text = document.getElementById('inputField').value;
-            var windowsText = text.replace(/\n/g, '\r\n');
-            
-            navigator.clipboard.writeText(windowsText).then(function () {
-                $("#btnCopyClipboardInput").html("<?php echo __("Copied"); ?>!");
-                setTimeout(function () {
-                    $("#btnCopyClipboardInput").html("<?php echo __("Copy to Clipboard"); ?>");
-                }, 1000);
-            }).catch(function (err) {
-                console.error('Could not copy text: ', err);
-            });
-
-        });
-
+        copyButtonRoutine("btnCopyClipboardInput", 'inputField');
+        
         // Copy text from expected output field when copy button is clicked
-        var clientOutput = document.getElementById("btnCopyClipboardOutput");
-        clientOutput.addEventListener('click', function(event){
-            
-            var text = document.getElementById('expectedOutputField').value;
-            var windowsText = text.replace(/\n/g, '\r\n');
-            
-            navigator.clipboard.writeText(windowsText).then(function () {
-                $("#btnCopyClipboardOutput").html("<?php echo __("Copied"); ?>!");
-                setTimeout(function () {
-                    $("#btnCopyClipboardOutput").html("<?php echo __("Copy to Clipboard"); ?>");
-                }, 1000);
-            }).catch(function (err) {
-                console.error('Could not copy text: ', err);
-            });
-
-        });
-
+        copyButtonRoutine("btnCopyClipboardOutput", 'expectedOutputField');
+        
         // Copy text from user output field when copy button is clicked
-        var clientUserOutput = document.getElementById("btnCopyClipboardUserOutput");
-        clientUserOutput.addEventListener('click', function(event){
-            
-            var text = document.getElementById('expectedOutputField').value;
-            var windowsText = text.replace(/\n/g, '\r\n');
-            
-            navigator.clipboard.writeText(windowsText).then(function () {
-                $("#btnCopyClipboardUserOutput").html("<?php echo __("Copied"); ?>!");
-                setTimeout(function () {
-                    $("#btnCopyClipboardUserOutput").html("<?php echo __("Copy to Clipboard"); ?>");
-                }, 1000);
-            }).catch(function (err) {
-                console.error('Could not copy text: ', err);
-            });
-
-        });
+        copyButtonRoutine("btnCopyClipboardUserOutput", 'userOutputField');
     })
 </script>
