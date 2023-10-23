@@ -18,9 +18,11 @@ services:
     restart: unless-stopped
     environment:
       TZ: "America/Sao_Paulo"
+      RUNCODES_COMPILER_EXEC_DIR: /exec
+      RUNCODES_COMPILER_EXEC_DIR_REMOTE: ${PWD}/exec
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /tmp:/tmp
+      - ./exec:/exec
     networks:
       - runcodes-net
 
