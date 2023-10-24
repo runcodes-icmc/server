@@ -145,6 +145,7 @@ class User extends AppModel
     if (isset($this->data[$this->alias]['password'])) {
       $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
     }
+    $this->data[$this->alias]['email'] = strtolower($this->data[$this->alias]['email']);
     return true;
   }
   public function afterFind($results, $primary = false)
