@@ -43,6 +43,15 @@ For example, to run the server with the compiler, you can run:
 docker compose -f docker-compose.full.yml up -d
 ```
 
+When doing that, it might also be usefull to pull some languages images, which can be done with:
+
+```sh
+docker pull ghcr.io/runcodes-icmc/compiler-images-c:latest
+docker pull ghcr.io/runcodes-icmc/compiler-images-cpp:latest
+docker pull ghcr.io/runcodes-icmc/compiler-images-python:latest
+# ...
+```
+
 #### Starting the cluster
 
 ```sh
