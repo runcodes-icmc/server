@@ -5,6 +5,13 @@ the submissions are made in another project. It currently is using PHP 5.6 with 
 2.4 framework. Both of those are already unmaintained since a long time, but upgrading it
 isn't as simple of a task...
 
+## Default User
+
+There is a default user setup:
+
+- User: `admin@admin`
+- Password: `?6MgoQik`
+
 ## Build & Run
 
 One of the news in relationship to the old "website" project is the usage of composer to
@@ -25,6 +32,16 @@ for more info check the `docs/configuration.md` file.
 
 All of those commands, unless explicitly said otherwise, are meant to be ran inside the repository
 root (the same at which this file is into).
+
+For most of the commands, if you want to automatically setup the compiler to actually run any code, you
+can use a specific compose config (`docker-compose.full.yml`), which will setup the compiler alongside
+the server. To use it, simply add the `-f docker-compose.full.yml` argument to the `docker compose` command.
+
+For example, to run the server with the compiler, you can run:
+
+```sh
+docker compose -f docker-compose.full.yml up -d
+```
 
 #### Starting the cluster
 
