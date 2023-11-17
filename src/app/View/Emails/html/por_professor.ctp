@@ -14,12 +14,12 @@ $domain = (new ConfigLoader())->configs['RUNCODES_DOMAIN'];
   </tr>
   <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
     <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-      Quando você for criar um novo oferecimento, é possível que a disciplina que você irá lecionar não esteja cadastrada no sistema. Caso isso aconteça, envie um e-mail para support@run.codes com o nome da universidade e o código e nome da disciplina para que possamos cadastrá-la. Você também pode enviar o link de uma página web da sua universidade com todas as disciplinas. A ideia é que com o passar do tempo já tenhamos mapeado todas as disciplinas de sua instituição de ensino.
+      Quando você for criar um novo oferecimento, é possível que a disciplina que você irá lecionar não esteja cadastrada no sistema. Caso isso aconteça, envie um e-mail para runcodes@icmc.usp.br com o nome da universidade e o código e nome da disciplina para que possamos cadastrá-la. Você também pode enviar o link de uma página web da sua universidade com todas as disciplinas. A ideia é que com o passar do tempo já tenhamos mapeado todas as disciplinas de sua instituição de ensino.
     </td>
   </tr>
   <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
     <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-      Nos esforçamos para criar uma interface intuitiva e de fácil interação, entretando se você encontrar qualquer dificuldade pode enviar um email para support@run.codes.
+      Nos esforçamos para criar uma interface intuitiva e de fácil interação, entretando se você encontrar qualquer dificuldade pode enviar um email para runcodes@icmc.usp.br.
     </td>
   </tr>
   <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">

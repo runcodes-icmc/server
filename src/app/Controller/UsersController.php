@@ -439,7 +439,7 @@ class UsersController extends AppController
             if ($this->User->saveField('password', $this->request->data['User']['password'])) {
               $this->Session->setFlash(__('Your password has been changed'), 'default', array(), 'success');
             } else {
-              $this->Session->setFlash(__('The system can not change your password, please try later or contact support@run.codes'));
+              $this->Session->setFlash(__('The system can not change your password, please try later or contact runcodes@icmc.usp.br'));
             }
           }
         } else {
@@ -554,7 +554,7 @@ class UsersController extends AppController
       $mailViewVars['user_email'] = $email;
       $template['viewVars'] = $mailViewVars;
       $message = null;
-      $response = $this->Message->sendMail($recipes, $subject, $message, null, $template, "support@run.codes");
+      $response = $this->Message->sendMail($recipes, $subject, $message, null, $template, "runcodes@icmc.usp.br");
       echo json_encode($response);
     } else {
       throw new NotFoundException();
