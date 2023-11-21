@@ -42,7 +42,7 @@ class MonitorShell extends AppShell {
         if ($busy > 2) {
             $this->out("<warning>Alert message sent</warning>");
             $msg = "Existem muitos trabalhos em fila no run.codes: <br>{$queue} trabalhos em fila<br>{$compiling} trabalhos em compila&ccedil;&atilde;o<br>{$running} trabalhos n&atilde;o finalizados<br>Verifique o sistema! Um problema pode ter acontecido";
-            $this->Message->sendMail("support@run.codes","Existem muitos trabalhos em fila!",$msg);
+            $this->Message->sendMail("runcodes@icmc.usp.br","Existem muitos trabalhos em fila!",$msg);
         }
 
 

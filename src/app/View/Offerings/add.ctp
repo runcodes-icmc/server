@@ -25,7 +25,7 @@
                                     <option ng-repeat="course in coursesList" value="{{ course.id }}">{{ course.title }}</option>
                                 </select>
                                 <div class="form-group has-error" ng-show="showCourses">
-                                <span id="helpBlock" class="help-block"><?php echo __("If you did not found your subject in the list above, please send an email to support@run.codes with your university name, subject code and name. We will add it as soon as possible."); ?></span>
+                                <span id="helpBlock" class="help-block"><?php echo __("If you did not found your subject in the list above, please send an email to runcodes@icmc.usp.br with your university name, subject code and name. We will add it as soon as possible."); ?></span>
                                 </div>
                             </div>
                             <?php

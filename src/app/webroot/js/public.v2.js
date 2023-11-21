@@ -315,7 +315,7 @@ runcodesApp.controller('MultipleUploadController', ['$scope', function ($scope) 
                     $scope.uploadMessage = $scope.uploadText;
                 } else {
                     if (data.textstatus != "parsererror") {
-                        alert("Ocorreu uma falha e seu arquivo não foi enviado, por favor tente novamente. Se este erro persistir, entre com contato com support@run.codes");
+                        alert("Ocorreu uma falha e seu arquivo não foi enviado, por favor tente novamente. Se este erro persistir, entre com contato com runcodes@icmc.usp.br");
                     }
                 }
             },

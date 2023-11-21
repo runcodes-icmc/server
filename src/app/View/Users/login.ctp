@@ -43,7 +43,7 @@
       <?php if (isset($confirmLink) && $confirmLink) : ?>
         <br>
         <div class="alert alert-info">
-          Se você não recebeu seu email para confirmação do cadastro, <?php echo $this->Form->postLink("clique aqui", "/Users/sendConfirmationEmail/" . $this->request->data["User"]["email"], array("style" => "color: black")); ?> que enviaremos novamente. Caso você continue sem receber, envie um email para support@run.codes
+          Se você não recebeu seu email para confirmação do cadastro, <?php echo $this->Form->postLink("clique aqui", "/Users/sendConfirmationEmail/" . $this->request->data["User"]["email"], array("style" => "color: black")); ?> que enviaremos novamente. Caso você continue sem receber, envie um email para runcodes@icmc.usp.br
         </div>
       <?php endif; ?>
       <?php echo $this->Html->link(__('Forgot your password?'), '#', array('class' => 'modalRecoverPassword pull-right login-box-link', 'data-toggle' => 'modal', 'data-target' => '#modalRecoverPassword')); ?>

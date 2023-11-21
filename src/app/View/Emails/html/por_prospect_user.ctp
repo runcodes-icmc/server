@@ -16,7 +16,7 @@ $domain = (new ConfigLoader())->configs['RUNCODES_DOMAIN'];
   <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
     <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
       <strong>Você é um professor ou coordenador de curso?</strong> <br>
-      Por padrão, todo cadastro no sistema tem status de “Aluno”. Assim, todo professor que desejar utilizar a ferramenta deve requerer o status de “Professor” enviando para support@run.codes um comprovante (este pode ser, por exemplo, um link para o seu site pessoal na instituição). Caso sua instituição de ensino não esteja listada no momento que você entrar no sistema pela primeira vez, envie-nos um email para ativarmos no sistema!
+      Por padrão, todo cadastro no sistema tem status de “Aluno”. Assim, todo professor que desejar utilizar a ferramenta deve requerer o status de “Professor” enviando para runcodes@icmc.usp.br um comprovante (este pode ser, por exemplo, um link para o seu site pessoal na instituição). Caso sua instituição de ensino não esteja listada no momento que você entrar no sistema pela primeira vez, envie-nos um email para ativarmos no sistema!
     </td>
   </tr>
 
