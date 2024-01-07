@@ -9,43 +9,29 @@
   <link href='//fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Open+Sans:600,700' rel='stylesheet' type='text/css'>
   <?php
-
-  echo $this->Html->meta('icon', $this->Html->url('//d7ghnchxvmryx.cloudfront.net/img/icon.png'));
-  //        echo $this->Html->css('libs/bootstrap.min');
-  //        echo $this->Html->css('libs/jasny-bootstrap.min');
-  //        echo $this->Html->css('libs/font-awesome.min');
-  //        echo $this->Html->css('libs/bootstrap-datetimepicker.min');
-  //        echo $this->Html->css('libs/rickshaw.min');
-  //        echo $this->Html->css('libs/summernote');
-  //        echo $this->Html->css('libs/summernote-bs3');
-  //        echo $this->Html->css('libs/chosen.min');
-  //        echo $this->Html->css('libs/zenburn');
-  ?>
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.min.css" />
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/rickshaw/1.5.1/rickshaw.min.css" />
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/summernote/0.6.1/summernote.min.css" />
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/summernote/0.6.1/summernote-bs3.min.css" />
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.min.css" />
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/zenburn.min.css" />
-  <?php
+  echo $this->Html->meta('icon', $this->Html->url('/img/icon.png'));
+  echo $this->Html->css('libs/bootstrap.min');
+  echo $this->Html->css('libs/jasny-bootstrap.min');
+  echo $this->Html->css('libs/font-awesome.min');
+  echo $this->Html->css('libs/bootstrap-datetimepicker.min');
+  echo $this->Html->css('libs/rickshaw.min');
+  echo $this->Html->css('libs/summernote');
+  echo $this->Html->css('libs/summernote-bs3');
+  echo $this->Html->css('libs/chosen.min');
+  echo $this->Html->css('libs/zenburn');
   echo $this->Html->css('template2015.min');
 
   echo $this->fetch('meta');
   echo $this->fetch('css');
   echo $this->fetch('script');
-
   ?>
-
 </head>
 
 <body ng-app="runcodesApp">
   <nav class="navbar navbar-fixed-top color-one">
     <div class="container-fluid">
       <div class="navbar-header hidden-xs hidden-sm">
-        <a class="navbar-brand-img" href="/"><img src="//d7ghnchxvmryx.cloudfront.net/img/logo.png" class="img-responsive"></a>
+        <a class="navbar-brand-img" href="/"><img src="/img/logo.png" class="img-responsive"></a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
