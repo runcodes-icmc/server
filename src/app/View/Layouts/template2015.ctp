@@ -195,62 +195,27 @@
       <?php echo $this->fetch('content'); ?>
     </aside>
   </section>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/rickshaw/1.5.1/rickshaw.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/summernote/0.6.1/summernote.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
   <?php
-  //        Old: Local files, now on Amazon S3
-  //        echo $this->Html->script('libs/angular.rickshaw');
-  //        echo $this->Html->script('libs/angular-flot');
-  //        echo $this->Html->script('libs/moment-with-locales.min');
-  ?>
-  <script src="//d7ghnchxvmryx.cloudfront.net/js/libs/angular.rickshaw.js"></script>
-  <script src="//d7ghnchxvmryx.cloudfront.net/js/libs/angular-flot.min.js"></script>
-  <script src="//d7ghnchxvmryx.cloudfront.net/js/libs/moment-with-locales.min.js"></script>
-
-  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
-
-  <script src="//d7ghnchxvmryx.cloudfront.net/js/libs/highlight.pack.js"></script>
-  <script src="//d7ghnchxvmryx.cloudfront.net/js/jquery.ui.widget.js"></script>
-  <script src="//d7ghnchxvmryx.cloudfront.net/js/jquery.iframe-transport.js"></script>
-  <script src="//d7ghnchxvmryx.cloudfront.net/js/jquery.fileupload.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/1.3.0/showdown.min.js"></script>
-  <?php
-  //        Old: Local files, now on Amazon S3
-  //        echo $this->Html->script('libs/highlight.pack.js');
-  //        echo $this->Html->script('jquery.ui.widget');
-  //        echo $this->Html->script('jquery.iframe-transport');
-  //        echo $this->Html->script('jquery.fileupload');
-  echo $this->Html->script('public.v2.min.js?v=20160227');
-  ?>
-  <?php
-  //        echo $this->Html->script('libs/jquery-2.1.0.min');
-  //        echo $this->Html->script('libs/bootstrap.min');
-  //        echo $this->Html->script('libs/d3.v3.min');
-  //        echo $this->Html->script('libs/rickshaw.min');
-  //        echo $this->Html->script('libs/jquery.flot.min');
-  //        echo $this->Html->script('libs/jasny-bootstrap.min');
-  //        echo $this->Html->script('libs/summernote.min');
-  //        echo $this->Html->script('libs/angular.min');
-  //        echo $this->Html->script('libs/angular.rickshaw');
-  //        echo $this->Html->script('libs/angular-flot');
-  //        echo $this->Html->script('libs/moment');
-  //        echo $this->Html->script('libs/moment-with-locales.min');
-  //        echo $this->Html->script('libs/bootstrap-datetimepicker.min');
-  //        echo $this->Html->script('libs/chosen.min');
-  //        echo $this->Html->script('libs/highlight.pack.js');
-  //        echo $this->Html->script('jquery.ui.widget');
-  //        echo $this->Html->script('jquery.iframe-transport');
-  //        echo $this->Html->script('jquery.fileupload');
-  //        echo $this->Html->script('../assets/zeroclipboard/ZeroClipboard.min');
-  //        echo $this->Html->script('public.v2.min');
+    echo $this->Html->script('libs/jquery-2.1.0.min');
+    echo $this->Html->script('libs/bootstrap.min');
+    echo $this->Html->script('libs/d3.v3.min');
+    echo $this->Html->script('libs/rickshaw.min');
+    echo $this->Html->script('libs/jquery.flot.min');
+    echo $this->Html->script('libs/jasny-bootstrap.min');
+    echo $this->Html->script('libs/summernote.min');
+    echo $this->Html->script('libs/angular.min');
+    echo $this->Html->script('libs/angular.rickshaw');
+    echo $this->Html->script('libs/angular-flot');
+    echo $this->Html->script('libs/moment');
+    echo $this->Html->script('libs/moment-with-locales.min');
+    echo $this->Html->script('libs/bootstrap-datetimepicker.min');
+    echo $this->Html->script('libs/chosen.min');
+    echo $this->Html->script('libs/highlight.pack.js');
+    echo $this->Html->script('jquery.ui.widget');
+    echo $this->Html->script('jquery.iframe-transport');
+    echo $this->Html->script('jquery.fileupload');
+    echo $this->Html->script('../assets/zeroclipboard/ZeroClipboard.min');
+    echo $this->Html->script('public.v2.min');
   ?>
   <?php if ($logged_user['type'] >= 3) : echo $this->Html->script('extra.js?v=20171917'); ?>
     <script>
