@@ -127,8 +127,8 @@ class Commit extends AppModel {
                          __("Your commit resulted in an error"),
                          __("Your commit will not be processed automatically, and is currently waiting an manual feedback"),
                          __("Your commit was analyzed as plagiarism"),
-                         __("Your commit could not be analyzed by our engine, please contact support@run.codes"),
-                         __("Your commit could not be analyzed by our engine, please contact support@run.codes"));
+                         __("Your commit could not be analyzed by our engine, please contact runcodes@icmc.usp.br"),
+                         __("Your commit could not be analyzed by our engine, please contact runcodes@icmc.usp.br"));
         }
         
         public function getOptionsStatusList(){

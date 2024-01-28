@@ -2151,11 +2151,11 @@ msgstr "Sua nova senha é: %s"
 msgid "This is an email sent by run.codes, you received it because is currently registered at runb.codes"
 msgstr "Este email foi enviado por run.codes, você recebeu ele por que está cadastrado no run.codes"
 
-msgid "Do not reply it! Contact support@run.codes to further information"
-msgstr "Não responda este email! Contate support@run.codes para mais informações"
+msgid "Do not reply it! Contact runcodes@icmc.usp.br to further information"
+msgstr "Não responda este email! Contate runcodes@icmc.usp.br para mais informações"
 
 msgid "The system can not change your password, please try later or contact the run.codes admin"
-msgstr "O sistema não pode alterar sua senha, por favor tente novamente mais tarde ou contate support@run.codes"
+msgstr "O sistema não pode alterar sua senha, por favor tente novamente mais tarde ou contate runcodes@icmc.usp.br"
 
 msgid "Your account is not confirmed, you have received an email with the link to confirm the account"
 msgstr "Sua conta não foi confirmada, você recebeu um email com o link para a confirmação"
@@ -2163,8 +2163,8 @@ msgstr "Sua conta não foi confirmada, você recebeu um email com o link para a 
 msgid "This email is not registered in the system"
 msgstr "Este email não está cadastrado no sistema"
 
-msgid "The system can not change your password, please try later or contact support@run.codes"
-msgstr "O sistema não pode alterar sua senha, por favor tente novamente mais tarde ou contact support@run.codes"
+msgid "The system can not change your password, please try later or contact runcodes@icmc.usp.br"
+msgstr "O sistema não pode alterar sua senha, por favor tente novamente mais tarde ou contact runcodes@icmc.usp.br"
 
 msgid "The new password and the confirmation do not match"
 msgstr "A nova senha e sua confirmação são diferentes"
@@ -2248,10 +2248,10 @@ msgid "Your new account password"
 msgstr "Sua nova senha"
 
 msgid "The system can not change your password, please try later or contact the run.codes support"
-msgstr "O sistema não pode mudar sua senha, por favor tente novamente ou contate support@run.codes"
+msgstr "O sistema não pode mudar sua senha, por favor tente novamente ou contate runcodes@icmc.usp.br"
 
 msgid "The system can not send your password, please try later or contact the run.codes support"
-msgstr "O sistema não pode enviar sua senha, por favor tente novamente ou contate support@run.codes"
+msgstr "O sistema não pode enviar sua senha, por favor tente novamente ou contate runcodes@icmc.usp.br"
 
 msgid "Wrong Answer"
 msgstr "Resposta Incorreta"
@@ -2697,8 +2697,8 @@ msgstr "O teste de similaridade foi agendado, você receberá um email quando o 
 msgid "Finished"
 msgstr "Encerrado"
 
-msgid "If you did not found your subject in the list above, please send an email to support@run.codes with your university name, subject code and name. We will add it as soon as possible."
-msgstr "Se você não encontrou sua disciplina na lista envie um e-mail para support@run.codes com a universidade, código e nome que cadastraremos o mais rápido possível."
+msgid "If you did not found your subject in the list above, please send an email to runcodes@icmc.usp.br with your university name, subject code and name. We will add it as soon as possible."
+msgstr "Se você não encontrou sua disciplina na lista envie um e-mail para runcodes@icmc.usp.br com a universidade, código e nome que cadastraremos o mais rápido possível."
 
 msgid "This exercise does not allow the compilation of commits"
 msgstr "Este exercício não permite a compilação das entregas"
@@ -2940,8 +2940,8 @@ msgstr "O teste de similaridade foi cancelado"
 msgid "You cannot request a similarity test if the exercise has less than 2 submissions"
 msgstr "Não é possível realizar o teste de similaridade se o exercício não tem pelo menos duas entregas"
 
-msgid "Your commit could not be analyzed by our engine, please contact support@run.codes"
-msgstr "Sua submissão não pode ser analisada pelo nosso sistema, nós verificaremos isso, mas se o erro persistir contate support@run.codes"
+msgid "Your commit could not be analyzed by our engine, please contact runcodes@icmc.usp.br"
+msgstr "Sua submissão não pode ser analisada pelo nosso sistema, nós verificaremos isso, mas se o erro persistir contate runcodes@icmc.usp.br"
 
 msgid "Bad formatted output"
 msgstr "Saída mal-formatada"
