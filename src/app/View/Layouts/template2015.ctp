@@ -200,9 +200,9 @@
     echo $this->Html->script('jquery.ui.widget');
     echo $this->Html->script('jquery.iframe-transport');
     echo $this->Html->script('jquery.fileupload');
-    echo $this->Html->script('../assets/zeroclipboard/ZeroClipboard.min');
     echo $this->Html->script('public.v2.min');
   ?>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/1.3.0/showdown.min.js"></script>
   <?php if ($logged_user['type'] >= 3) : echo $this->Html->script('extra.js?v=20171917'); ?>
     <script>
       var admin_menu = false;
