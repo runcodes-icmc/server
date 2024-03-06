@@ -195,7 +195,19 @@ class ExerciseCasesController extends AppController
       }
     }
 
-    $timeoptions = array('1' => __('1sec'), '2' => __('2sec'), '3' => __('3sec'), '4' => __('4sec'), '5' => __('5sec'), '10' => __('10sec'));
+    $timeoptions = array(
+      '1' => __('1sec'),
+      '2' => __('2sec'),
+      '3' => __('3sec'),
+      '4' => __('4sec'),
+      '5' => __('5sec'),
+      '10' => __('10sec'),
+      '20' => __('20sec'),
+      '30' => __('30sec'),
+      '40' => __('40sec'),
+      '50' => __('50sec'),
+      '60' => __('1min'),
+    );
     $breadcrumbs = array();
     $this->loadModel('Course');
     $this->Course->recursive = -1;
