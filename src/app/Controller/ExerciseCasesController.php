@@ -515,14 +515,19 @@ class ExerciseCasesController extends AppController
       $this->Session->setFlash(__('This case uses a lot of memory and can not be edited in browser'));
       $this->redirect(array('controller' => 'Exercises', 'action' => 'viewProfessor', $exercise['Exercise']['id']));
     }
-    if ($id == 626) {
-      $timeoptions = array(
-        '1' => __('1sec'), '2' => __('2sec'), '3' => __('3sec'), '4' => __('4sec'), '5' => __('5sec'), '10' => __('10sec'),
-        '15' => __('15sec'), '20' => __('20sec'), '30' => __('30sec'), '40' => __('40sec'), '50' => __('50sec'), '60' => __('1min'),
-      );
-    } else {
-      $timeoptions = array('1' => __('1sec'), '2' => __('2sec'), '3' => __('3sec'), '4' => __('4sec'), '5' => __('5sec'), '10' => __('10sec'));
-    }
+    $timeoptions = array(
+      '1' => __('1sec'),
+      '2' => __('2sec'),
+      '3' => __('3sec'),
+      '4' => __('4sec'),
+      '5' => __('5sec'),
+      '10' => __('10sec'),
+      '20' => __('20sec'),
+      '30' => __('30sec'),
+      '40' => __('40sec'),
+      '50' => __('50sec'),
+      '60' => __('1min'),
+    );
 
     $breadcrumbs = array();
     $this->loadModel('Course');
