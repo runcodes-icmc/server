@@ -269,7 +269,7 @@ class Commit extends AppModel {
                 }else if($results['Commit']['status']==2) {
                     $results['Commit']['status_color'] = "info";
                 }else if($results['Commit']['status']==3) {
-                    $results['Commit']['status_color'] = "primaty";
+                    $results['Commit']['status_color'] = "primary";
                 }else if($results['Commit']['status']==4) {
                     $results['Commit']['status_color'] = "success";
                 }else if($results['Commit']['status']==5) {
@@ -315,7 +315,7 @@ class Commit extends AppModel {
                 }else if($results['status']==2) {
                     $results['status_color'] = "info";
                 }else if($results['status']==3) {
-                    $results['status_color'] = "primaty";
+                    $results['status_color'] = "primary";
                 }else if($results['status']==4) {
                     $results['status_color'] = "success";
                 }else if($results['status']==5) {
