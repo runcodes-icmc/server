@@ -41,42 +41,30 @@ class PagesController extends AppController
   
   // Custom sort function based on status (completed exercises are shown last)
   private function sortByUrgency($a, $b) {
-      if (empty($a['MyCommit']) || empty($b['MyCommit'])) {
-          return 0;
-      }
+    if (empty($a['MyCommit']) || empty($b['MyCommit'])) {
+        return 0;
+    }
+
+    $statusA = $a['MyCommit']['status_color'];
+    $statusB = $b['MyCommit']['status_color'];
+
+    $deadlineA = isset($a['Exercise']['deadline']) ? $a['Exercise']['deadline'] : '';
+    $deadlineB = isset($b['Exercise']['deadline']) ? $b['Exercise']['deadline'] : '';
+
+    // If both statuses are 'success', return the one with the earliest deadline
+    if ($statusA == 'success' && $statusB == 'success') {
+        return ($deadlineA < $deadlineB) ? -1 : 1;
+    }
+
+    // If both statuses are not 'success', return the one with the earliest deadline
+    if ($statusA != 'success' && $statusB != 'success') {
+        return ($deadlineA < $deadlineB) ? -1 : 1;
+    }
+
+    // If one status is 'success' and the other is not, return the one that is not 'success'
+    return ($statusA == 'success') ? 1 : -1;
+  }   
   
-      $statusOrder = [
-          'warning' => 1,
-          'danger' => 2,
-          'info' => 3,
-          'primary' => 4,
-          'success' => 5
-      ];
-  
-      $statusA = isset($statusOrder[$a['MyCommit']['status_color']]) ? $statusOrder[$a['MyCommit']['status_color']] : 0;
-      $statusB = isset($statusOrder[$b['MyCommit']['status_color']]) ? $statusOrder[$b['MyCommit']['status_color']] : 0;
-  
-      if ($statusA < $statusB) {
-          $statusComparison = -1;
-      } elseif ($statusA == $statusB) {
-          $statusComparison = 0;
-      } else {
-          $statusComparison = 1;
-      }
-  
-      if ($statusComparison != 0) {
-          return $statusComparison;
-      }
-      
-      $deadlineA = isset($a['Exercise']['deadline']) ? $a['Exercise']['deadline'] : '';
-      $deadlineB = isset($b['Exercise']['deadline']) ? $b['Exercise']['deadline'] : '';
-  
-      if ($deadlineA == $deadlineB) {
-          return 0;
-      }
-      return ($deadlineA < $deadlineB) ? -1 : 1;
-  }
-   
   public function home_student()
   {
     $this->layout = "template2015";
