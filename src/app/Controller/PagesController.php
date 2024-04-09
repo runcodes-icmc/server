@@ -133,8 +133,7 @@ class PagesController extends AppController
     }
 
     $this->Exercise->recursive = -1;
-    $statusOrder = array('warning', 'danger', 'info', 'primary', 'success');
-
+    
     // Fetch exercises
     $exercises = $this->Exercise->find('all', array(
       'conditions' => array(
