@@ -38,7 +38,45 @@ class PagesController extends AppController
     $this->set(compact('page', 'subpage', 'title_for_layout'));
     $this->render(implode('/', $path));
   }
-
+  
+  // Custom sort function based on status (completed exercises are shown last)
+  private function sortByUrgency($a, $b) {
+      if (empty($a['MyCommit']) || empty($b['MyCommit'])) {
+          return 0;
+      }
+  
+      $statusOrder = [
+          'warning' => 1,
+          'danger' => 2,
+          'info' => 3,
+          'primary' => 4,
+          'success' => 5
+      ];
+  
+      $statusA = isset($statusOrder[$a['MyCommit']['status_color']]) ? $statusOrder[$a['MyCommit']['status_color']] : 0;
+      $statusB = isset($statusOrder[$b['MyCommit']['status_color']]) ? $statusOrder[$b['MyCommit']['status_color']] : 0;
+  
+      if ($statusA < $statusB) {
+          $statusComparison = -1;
+      } elseif ($statusA == $statusB) {
+          $statusComparison = 0;
+      } else {
+          $statusComparison = 1;
+      }
+  
+      if ($statusComparison != 0) {
+          return $statusComparison;
+      }
+      
+      $deadlineA = isset($a['Exercise']['deadline']) ? $a['Exercise']['deadline'] : '';
+      $deadlineB = isset($b['Exercise']['deadline']) ? $b['Exercise']['deadline'] : '';
+  
+      if ($deadlineA == $deadlineB) {
+          return 0;
+      }
+      return ($deadlineA < $deadlineB) ? -1 : 1;
+  }
+   
   public function home_student()
   {
     $this->layout = "template2015";
@@ -93,13 +131,24 @@ class PagesController extends AppController
       $enrollments[$k]['Offering'] = $offering2['Offering'];
       $enrollments[$k]['Offering']['Course'] = $course['Course'];
     }
+
     $this->Exercise->recursive = -1;
+    $statusOrder = array('warning', 'danger', 'info', 'primary', 'success');
+
+    // Fetch exercises
     $exercises = $this->Exercise->find('all', array(
-      'conditions' => array('OR' => array('isOpen' => 'true', '(show_before_opening = true AND open_date >= NOW() AND deadline >= NOW())'), "EXISTS (SELECT id FROM enrollments WHERE user_email='" . $user['User']['email'] . "' AND enrollments.offering_id=Exercise.offering_id AND banned = FALSE)"),
+      'conditions' => array(
+          'OR' => array(
+              'isOpen' => 'true',
+              '(show_before_opening = true AND open_date >= NOW() AND deadline >= NOW())'
+          ),
+          "EXISTS (SELECT id FROM enrollments WHERE user_email='" . $user['User']['email'] . "' AND enrollments.offering_id=Exercise.offering_id AND banned = FALSE)"
+      ),
       'limit' => 5,
       'order' => 'deadline',
       'fields' => array('id', 'title', 'offering_id', 'deadline')
     ));
+
 
     $this->loadModel('Commit');
     $this->Commit->recursive = -1;
@@ -124,6 +173,10 @@ class PagesController extends AppController
         $exercises[$k]['MyCommit']['score_color'] = "danger";
       }
     }
+
+    // Sort the exercises array by urgency
+    usort($exercises, array($this, 'sortByUrgency'));
+
     unset($commit);
     unset($offering2);
     unset($course);
