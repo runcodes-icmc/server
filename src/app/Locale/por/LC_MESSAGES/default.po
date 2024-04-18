@@ -398,6 +398,12 @@ msgstr "pontuação"
 msgid "Running"
 msgstr "Rodando"
 
+msgid "Initializing"
+msgstr "Inicializando"
+
+msgid "Your commit is being prepared for execution"
+msgstr "Sua submissão está sendo preparada para execução"
+
 #: Model/Commit.php:115
 #: View/Exercises/index.ctp:56
 msgid "Uncompleted"

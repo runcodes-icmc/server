@@ -114,7 +114,7 @@ class Commit extends AppModel {
 	);
         
         public function getStatusList(){
-            return array(__("In Queue"),__("Compiling"),__("Compiled"),__("Running"),__("Uncompleted"),__("Completed"),__("Error"),__("Submitted"),__("Plagiarism"),__("Server Error"),__("Running"),__("Running"));
+            return array(__("In Queue"),__("Compiling"),__("Compiled"),__("Running"),__("Uncompleted"),__("Completed"),__("Error"),__("Submitted"),__("Plagiarism"),__("Server Error"),__("Running"),__("Initializing"));
         }
         
         public function getDetailedStatusList(){
@@ -128,7 +128,8 @@ class Commit extends AppModel {
                          __("Your commit will not be processed automatically, and is currently waiting an manual feedback"),
                          __("Your commit was analyzed as plagiarism"),
                          __("Your commit could not be analyzed by our engine, please contact runcodes@icmc.usp.br"),
-                         __("Your commit could not be analyzed by our engine, please contact runcodes@icmc.usp.br"));
+                         __("Your commit is being executed"),
+                         __("Your commit is being prepared for execution"));
         }
         
         public function getOptionsStatusList(){
