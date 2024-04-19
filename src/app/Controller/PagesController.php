@@ -131,7 +131,6 @@ class PagesController extends AppController
           ),
           "EXISTS (SELECT id FROM enrollments WHERE user_email='" . $user['User']['email'] . "' AND enrollments.offering_id=Exercise.offering_id AND banned = FALSE)"
       ),
-      'limit' => 5,
       'order' => 'deadline',
       'fields' => array('id', 'title', 'offering_id', 'deadline')
     ));
@@ -163,6 +162,8 @@ class PagesController extends AppController
 
     // Sort the exercises array by urgency
     usort($exercises, array($this, 'sortByUrgency'));
+    // Take only the first 5 urgent exercises
+    $exercises = array_slice($exercises, 0, 5);
 
     unset($commit);
     unset($offering2);
