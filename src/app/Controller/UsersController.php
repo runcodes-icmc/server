@@ -385,7 +385,7 @@ class UsersController extends AppController
         if ($user['User']['source'] == 1) {
           $this->Session->setFlash(__('This account is registered with LinkedIn'));
         } elseif ($user['User']['confirmed']) {
-          $hash = sha1(time() . Configure::read('Security.Salt'));
+          $hash = sha1(time() . Configure::read('Security.Salt') . $email);
           $newPass = substr($hash, 0, 10);
           $user['User']['password'] = $newPass;
           $this->User->id = $email;
