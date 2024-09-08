@@ -629,6 +629,31 @@ class Archive extends AppModel
   //        return $this->handleFileUpload($upload,$prefix,$allowed_types,$max_size_limit,Configure::read('AWS.commits-bucket-name'));
   //    }
 
+
+  // This is not the ideal solution, but it is not worth to change the whole
+  // behaviour of the commits upload for now. (Will be rewritten soon).
+  private function extractExtension($fileName) {
+      $split = explode(".", $upload['name'][$index]);
+
+      if (count($split) == 1) {
+        return $split[0];
+      }
+
+      $ext = $split[count($split) - 1];
+
+      // Handle OpenMP and MPI for C/C++
+      if (count($split) >= 3 && in_array(strtolower($ext), array("c", "cpp", "cc"))) {
+
+        // If it is, check if the next extension is either omp or mpi
+        if (in_array(strtolower($split[count($split) - 2]), array("omp", "mpi"))) {
+          // Keep the mpi/omp prefix
+          $ext = $split[count($split) - 2] . "." . $ext;
+        }
+      }
+
+      return $ext;
+  }
+
   public function handleCommitFileUpload($upload, $exerciseId, $commitId, $meta = array(), $allowed_types = null, $max_size_limit = 2000000)
   {
     $bucket = Configure::read('AWS.commits-bucket-name');
@@ -639,8 +664,9 @@ class Archive extends AppModel
     if ($upload && is_array($upload['tmp_name'])) {
       //            Log::register("Multiple Commit Upload");
       $index = 0;
-      $split = explode(".", $upload['name'][$index]);
-      $ext = $split[(count($split) - 1) < 0 ? 0 : count($split) - 1];
+
+      $ext = $this->extractExtension($upload['name'][$index]);
+
       $result[$index] = new stdClass();
       $result[$index]->name = $commitId . "-" . $hash_time . "." . $ext; //$upload['name'][$index];
       $result[$index]->realname = $upload['name'][$index];
