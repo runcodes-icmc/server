@@ -633,7 +633,7 @@ class Archive extends AppModel
   // This is not the ideal solution, but it is not worth to change the whole
   // behaviour of the commits upload for now. (Will be rewritten soon).
   private function extractExtension($fileName) {
-      $split = explode(".", $upload['name'][$index]);
+      $split = explode(".", $fileName);
 
       if (count($split) == 1) {
         return $split[0];
