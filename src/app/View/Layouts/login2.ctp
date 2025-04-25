@@ -38,8 +38,9 @@ p {
   <div class="welcome-area">
     <div class="welcome-area-content">
       <?php echo $this->element(Configure::read('Config.language') . DS . "homeRightBar"); ?>
-      <?php echo __("By browsing in %s you agree with the", __("run.codes")) . " ";
-       echo $this->Html->link(__("Terms of Use"), '#', array('class' => 'modalTerms terms', 'data-toggle' => 'modal', 'data-target' => '#modalTerms')); ?>
+      <?php echo "<p class=\"rc-description\">" . __("By browsing in %s you agree with the", __("run.codes")) . " ";
+       echo $this->Html->link(__("Terms of Use"), '#', array('class' => 'modalTerms terms', 'data-toggle' => 'modal', 'data-target' => '#modalTerms')) . "</p>"; ?>
+      <?php echo "<p class=\"rc-description\">Note que o runcodes não é um serviço mantido pelo STI, logo, em caso de problemas com a plataforma, entre em contato com <a href=\"mailto:runcodes@icmc.usp.br\">runcodes@icmc.usp.br</a></p>"; ?>
     </div>
   </div>
   <div class="login-area">
