@@ -52,6 +52,12 @@ docker pull ghcr.io/runcodes-icmc/compiler-images-python:latest
 # ...
 ```
 
+Then open this URL on any browser:
+
+```url
+http://localhost:8080
+```
+
 #### Starting the cluster
 
 ```sh

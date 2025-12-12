@@ -7,8 +7,8 @@ RUN echo "deb http://archive.debian.org/debian stretch main" >> /etc/apt/sources
 
 # Dependencies
 RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get install -y \
+RUN apt-get upgrade -y --allow-unauthenticated
+RUN apt-get install -y --allow-unauthenticated\
   wget \
   libfreetype6-dev \
   libjpeg62-turbo-dev \
