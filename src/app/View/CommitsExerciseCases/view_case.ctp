@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <p><?php echo __("Expected Output"); ?></p>
-                    <pre><?php echo $exerciseCase['ExerciseCase']['output']; ?></pre>
+                    <pre><?php echo h($exerciseCase['ExerciseCase']['output']); ?></pre>
                     <button class="btn btn-info" id="btnCopyClipboardOutput" data-clipboard-target="expectedOutputField"><?php echo __("Copy to Clipboard"); ?></button>
                 </div>
                 <div class="col-md-6">
