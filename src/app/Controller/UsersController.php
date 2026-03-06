@@ -42,6 +42,7 @@ class UsersController extends AppController
     }
 
     if (isset($this->request->data["User"]["email"])) {
+    $this->request->data["User"]["email"] = strtolower($this->request->data["User"]["email"]);
       $this->User->id = $this->request->data["User"]["email"];
       if (!$this->User->field("confirmed")) {
         $this->set("confirmLink", true);
