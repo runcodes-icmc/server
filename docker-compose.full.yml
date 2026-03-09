@@ -26,7 +26,7 @@ services:
 
   # PostgreSQL Database
   database:
-    image: ghcr.io/runcodes-icmc/database:latest-development
+    image: ghcr.io/runcodes-icmc/database:1.8-development
     restart: unless-stopped
     environment:
       TZ: "America/Sao_Paulo"
