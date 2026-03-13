@@ -3,7 +3,7 @@
 
 	root * /srv/public
 
-	handle /.well-known/traffic-advice {
+	handle /.well-known/* {
 		respond 204
 	}
 
