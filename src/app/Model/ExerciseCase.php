@@ -154,12 +154,16 @@ class ExerciseCase extends AppModel {
 //	);
 
 	public function getExerciseId() {
+		if (isset($this->data['ExerciseCase']['exercise_id'])) {
+			return $this->data['ExerciseCase']['exercise_id'];
+		}
+
 		if (is_numeric($this->id)) {
 			$case_data = $this->findById($this->id);
 			return $case_data['ExerciseCase']['exercise_id'];
-		} else {
-			return null;
 		}
+
+		return null;
 	}
 
 	public function getExercise($id = null,$fields = null) {
@@ -210,7 +214,10 @@ class ExerciseCase extends AppModel {
 	public function afterSave($created,$options = array()) {
 		App::uses('AwsCache', 'Model');
 		$Cache = new AwsCache();
-		$Cache->removeItem("exercise-" . $this->data['ExerciseCase']['exercise_id']);
+		$exerciseId = $this->getExerciseId();
+		if ($exerciseId) {
+			$Cache->removeItem("exercise-" . $exerciseId);
+		}
 		$this->updateExerciseCasesChange();
 	}
 
