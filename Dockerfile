@@ -8,6 +8,8 @@ RUN echo "deb http://archive.debian.org/debian stretch main" >> /etc/apt/sources
 # Dependencies
 RUN apt-get update
 RUN apt-get upgrade -y --allow-unauthenticated
+# PHP 5.6 links OpenSSL 1.0.2. Stretch's libssl-dev is 1.1 and its opaque
+# structs break ext/openssl, so the rebuild needs libssl1.0-dev.
 RUN apt-get install -y --allow-unauthenticated\
   wget \
   libfreetype6-dev \
@@ -17,7 +19,50 @@ RUN apt-get install -y --allow-unauthenticated\
   libpq-dev \
   curl libcurl3-dev \
   zip libzip-dev \
-  zlib1g-dev libicu-dev g++
+  zlib1g-dev libicu-dev g++ \
+  dpkg-dev libxml2-dev libssl1.0-dev libedit-dev libmhash-dev bison
+
+# php2shell (CVE-2026-109618 / CVE-2026-109619) ------------------------------
+# PHP 5.6 is EOL and gets no upstream fix. Rebuild the bundled 5.6.40 source
+# with the community backport of the official "avoid bailout" mitigation
+# (see config/php/patches/README.md). The configure line mirrors the one used
+# by the official php:5.6-fpm image so the ABI matches the extensions
+# installed below.
+COPY ./config/php/patches/php-5.6-community-backport.patch /tmp/php2shell.patch
+RUN set -eux; \
+    gnuArch="$(dpkg-architecture -qDEB_BUILD_GNU_TYPE)"; \
+    multiarch="$(dpkg-architecture -qDEB_HOST_MULTIARCH)"; \
+    docker-php-source extract; \
+    cd /usr/src/php; \
+    patch -p1 --batch --forward < /tmp/php2shell.patch; \
+    grep -q 'php2shell' ext/session/session.c; \
+    CFLAGS="-fstack-protector-strong -fpic -fpie -O2" \
+    CPPFLAGS="-fstack-protector-strong -fpic -fpie -O2" \
+    LDFLAGS="-Wl,-O1 -Wl,--hash-style=both -pie" \
+    ./configure \
+        --build="$gnuArch" \
+        --with-config-file-path=/usr/local/etc/php \
+        --with-config-file-scan-dir=/usr/local/etc/php/conf.d \
+        --enable-option-checking=fatal \
+        --with-mhash \
+        --enable-ftp \
+        --enable-mbstring \
+        --enable-mysqlnd \
+        --with-curl \
+        --with-libedit \
+        --with-openssl \
+        --with-zlib \
+        --with-libdir="lib/$multiarch" \
+        --enable-fpm \
+        --with-fpm-user=www-data \
+        --with-fpm-group=www-data \
+        --disable-cgi; \
+    make -j"$(nproc)"; \
+    make install; \
+    docker-php-source delete; \
+    rm -f /tmp/php2shell.patch; \
+    grep -q zend_mm_safe_error_ex /usr/local/include/php/Zend/zend_alloc.h; \
+    php -v
 
 # PHP extensions
 
