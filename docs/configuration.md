@@ -43,6 +43,10 @@ Defines the e-mail name for sending e-mails.
 
 Defines the S3 endpoint to be used for file storage.
 
+### `RUNCODES_S3_PUBLIC_ENDPOINT`
+
+Defines the S3 endpoint used by browsers to download files. Presigned URLs are signed for this host, so it defaults to `RUNCODES_S3_ENDPOINT`. Any proxy in front of it must forward the original `Host` header to the S3 gateway, otherwise the signature will not match.
+
 ### `RUNCODES_S3_REGION`
 
 Defines the S3 region to be used for the file storage.
