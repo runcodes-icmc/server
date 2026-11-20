@@ -12,21 +12,12 @@ class Archive extends AppModel
 {
 
   public $useTable = false; // This model does not use a database table
-  public $s3PresignClient;
 
   public function __construct($id = false, $table = null, $ds = null)
   {
     parent::__construct($id, $table, $ds);
     $this->s3Client = $this->AwsSDK->createS3();
     $this->s3Client->registerStreamWrapper();
-
-    // SigV4 signs the Host header, so a presigned URL must be signed with
-    // exactly the host the browser will request. The public endpoint may not
-    // even be resolvable from here, but presigning never makes a request.
-    $loader = new ConfigLoader();
-    $this->s3PresignClient = $this->AwsSDK->createS3(array(
-      'endpoint' => $loader->configs['RUNCODES_S3_PUBLIC_ENDPOINT'],
-    ));
   }
 
   private function createCommitFolder($exercise_id, $user_email, $commit_time)
@@ -339,13 +330,13 @@ class Archive extends AppModel
         'Key'    => $key
       ));
 
-      $command = $this->s3PresignClient->getCommand('GetObject', array(
+      $command = $this->s3Client->getCommand('GetObject', array(
         'Bucket' => Configure::read('AWS.download-bucket-name'),
         'Key' => $key,
         'ContentType' => 'application/octet-stream',
         'ResponseContentDisposition' => 'attachment; filename="' . $fileName . '"'
       ));
-      return (string) $this->s3PresignClient->createPresignedRequest($command, '+10 minutes')->getUri();
+      return $this->toPublicUrl((string) $this->s3Client->createPresignedRequest($command, '+10 minutes')->getUri());
     } catch (Exception $e) {
       App::import('Model', 'Message');
       Log::register("Archive.php[method: copyFileToAwsS3]" . $e->getMessage());
@@ -404,11 +395,11 @@ class Archive extends AppModel
   {
     try {
 
-      $cmd = $this->s3PresignClient->getCommand('GetObject', array(
+      $cmd = $this->s3Client->getCommand('GetObject', array(
         'Bucket' => Configure::read('AWS.files-bucket-name'),
         'Key'    => $prefix . DS . $file
       ));
-      return (string) $this->s3PresignClient->createPresignedRequest($cmd, '+2 minutes')->getUri();
+      return $this->toPublicUrl($this->s3Client->createPresignedRequest($cmd, '+2 minutes')->getUri());
     } catch (Exception $e) {
       App::import('Model', 'Message');
       Log::registerException($e, "Archive.php", "getFileDownloadLinkFromAwsS3");
@@ -801,5 +792,11 @@ class Archive extends AppModel
       Log::registerException($e, "Archive.php", "deleteFileFromAWS");
       return false;
     }
+  }
+
+  private function toPublicUrl($url)
+  {
+    $loader = new ConfigLoader();
+    return str_replace($loader->configs["RUNCODES_S3_ENDPOINT"], $loader->configs["RUNCODES_S3_PUBLIC_ENDPOINT"], $url);
   }
 }
